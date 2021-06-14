@@ -77,4 +77,3 @@ TodoApp leírása:
             -fcim       varchyr(50)     
             -fleiras    text
             
-_
