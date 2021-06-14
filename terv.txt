@@ -76,4 +76,7 @@ TodoApp leírása:
             -fid        int             autoinc
             -fcim       varchyr(50)     
             -fleiras    text
+
+
+...
             
