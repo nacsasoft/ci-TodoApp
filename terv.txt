@@ -1,0 +1,79 @@
+TodoApp leírása:
+
+-Megvalósítás: CI4 + MySql + Smarty (sablon öröklődéssel)
+
+-Feladat:
+    - Feladatok/tennivalók (CRUD):
+        - létrehozása, lementése adatbázisba
+        - törlése
+        - szerkesztése
+        - kiválasztott feladat/ok küldése emailben
+
+-Megjelenés:
+
+    - Alapsablon: (mainTemplate.tpl):
+        - HEAD :
+            - HTML fejléc
+            - meta adatok
+            - stílusok
+            - esetleg fontok...
+        - BODY :
+            -nav :        
+                - Logó + Cím (TodoApp) + Rólam + Help
+            -BodyMain szekció:
+                -Itt lesznek az aktuális tartalmak (lista, CRUD, Rólam, Help...) dinamikusan
+            -BodyFooter szekció:
+                -"Copyright 2021" + "by Nagy Csaba e.v."
+            
+    - Feladatok listázása, alapnézet (mainTodoApp.tpl):
+        - nav bővítése : "Új feladat" -al (menüből is elérhető legyen)
+        -BodyMain szekció:
+            -bal oldali listában a feladatok
+            -jobb oldali szövegmezőben a feladat részletei
+            -gombok: "Törlés" + "Szerkesztés" + "Küldés..." + "Új feladat"
+    
+    - Új feladat felvitele:
+        -BodyMain szekció:
+            -Cím
+            -feladat leírása
+            -gombok: 
+                -"Hozzáadás":
+                    -adatok ellenörzése (cím: max 50 karakter; mindegyik kitöltése kötelező; escape)
+                    -adatok felvitele db-be
+                    -értesítés sikeres vagy sikertelen felvitelről
+                    -vissza a főoldalra
+                "Mégsem": 
+                    -alert??? vissza a főoldalra...
+
+    - Kiválasztott feladat szerkesztése:
+        -BodyMain szekció:
+            Cím
+            -feladat leírása
+            -gombok: 
+                -"Frissítés":
+                    -adatok ellenörzése (cím: max 50 karakter; mindegyik kitöltése kötelező; escape)
+                    -adatok felvitele db-be
+                    -értesítés sikeres vagy sikertelen frissítésről
+                    -vissza a főoldalra
+                "Mégsem": 
+                    -alert??? vissza a főoldalra...
+
+    - Kiválasztott feladat törlése:
+        -Alert : Biztos hogy törlöd a "című..." feladatot?
+            -igen : törlés, lista frissítése
+            -nem : alert bezárása...
+
+    - Kiválasztott feladat küldése emailben:
+        -Be: email cím (ellenörzés fontos)
+        -Cím + leírás megjelenítése (readonly)
+        -Küldés
+
+
+-Adatbázis:
+    -Adatbázis neve : ci-TodoApp
+    -Tábla:
+        -feladatok
+            -fid        int             autoinc
+            -fcim       varchyr(50)     
+            -fleiras    text
+            
