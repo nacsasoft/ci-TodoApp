@@ -6,6 +6,12 @@
     max-width: 100%;
 }
 
+/* menü aktív link beállítása */
+.navbar-dark .nav-item > .nav-link.active  {
+    color:white;
+    background-color: red;
+}
+
 @media (min-width: 1400px) {
     .mainContainer{
         max-width: 1400px;

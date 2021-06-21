@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-15 12:29:47
+/* Smarty version 3.1.39, created on 2021-06-21 14:19:42
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60c8e38b1e6a85_39217006',
+  'unifunc' => 'content_60d0e64e522851_01299995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6fba66191803b5c07127960dfa2e20181a8b369' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl',
-      1 => 1623778161,
+      1 => 1624303181,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c8e38b1e6a85_39217006 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d0e64e522851_01299995 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -52,8 +52,8 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Kezdőlap<span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.php">Kezdőlap<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -68,7 +68,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_124184467160c8e38b1e5209_48212122', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_162851844060d0e64e5214d5_04862401', 'BodyMain');
 ?>
 
             </section>
@@ -96,15 +96,20 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_124184467160c8e38b
         <?php echo '<script'; ?>
  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
+
+        <?php echo '<script'; ?>
+ src="scripts/myscripts.js"><?php echo '</script'; ?>
+>
+
     </body>
 </html><?php }
 /* {block 'BodyMain'} */
-class Block_124184467160c8e38b1e5209_48212122 extends Smarty_Internal_Block
+class Block_162851844060d0e64e5214d5_04862401 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_124184467160c8e38b1e5209_48212122',
+    0 => 'Block_162851844060d0e64e5214d5_04862401',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
