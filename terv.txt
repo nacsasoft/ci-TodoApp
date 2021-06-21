@@ -3,7 +3,7 @@ TodoApp leírása:
 -Megvalósítás: CI4 + MySql + Smarty (sablon öröklődéssel)
 
 -Feladat:
-    - Feladatok/tennivalók (CRUD):
+    - Feladatok/tennivalók (Todo):
         - létrehozása, lementése adatbázisba
         - törlése
         - szerkesztése
@@ -12,20 +12,20 @@ TodoApp leírása:
 -Megjelenés:
 
     - Alapsablon: (mainTemplate.tpl):
-        - HEAD :
+        - HEAD :    -OK
             - HTML fejléc
             - meta adatok
-            - stílusok
+            - stílusok / bootstrap...
             - esetleg fontok...
         - BODY :
             -nav :        
-                - Logó + Cím (TodoApp) + Rólam + Help
-            -BodyMain szekció:
+                - Logó + Cím (TodoApp) + Rólam + Help + keresés (feladatok között...)
+            -BodyMain szekció:  -OK
                 -Itt lesznek az aktuális tartalmak (lista, CRUD, Rólam, Help...) dinamikusan
-            -BodyFooter szekció:
+            -BodyFooter szekció:    -OK
                 -"Copyright 2021" + "by Nagy Csaba e.v."
             
-    - Feladatok listázása, alapnézet (mainTodoApp.tpl):
+    - Feladatok listázása, alapnézet (mainTodoApp.tpl) + A KERESÉS EREMÉNYE IS IDE KERÜL!!!!
         - nav bővítése : "Új feladat" -al (menüből is elérhető legyen)
         -BodyMain szekció:
             -bal oldali listában a feladatok
@@ -67,6 +67,9 @@ TodoApp leírása:
         -Be: email cím (ellenörzés fontos)
         -Cím + leírás megjelenítése (readonly)
         -Küldés
+
+    
+
 
 
 -Adatbázis:

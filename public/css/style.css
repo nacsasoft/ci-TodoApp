@@ -1,0 +1,15 @@
+/* saját stíluslap */
+
+.BodyMain { min-height: 80vh;}
+
+.mainContainer{
+    max-width: 100%;
+}
+
+@media (min-width: 1400px) {
+    .mainContainer{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
