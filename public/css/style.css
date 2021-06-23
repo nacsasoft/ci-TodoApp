@@ -2,7 +2,7 @@
 
 .BodyMain { min-height: 80vh;}
 
-.mainContainer{
+.mainContainer {
     max-width: 100%;
 }
 
@@ -10,6 +10,13 @@
 .navbar-dark .nav-item > .nav-link.active  {
     color:white;
     background-color: red;
+}
+
+.feladatlista {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 15px 0;
 }
 
 @media (min-width: 1400px) {

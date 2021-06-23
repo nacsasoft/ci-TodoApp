@@ -9,11 +9,19 @@ use CI4Smarty\Config\Services;
 
 class Home extends BaseController
 {
+	private $db;
+
 	public function index()
 	{
 		$smarty = Services::smarty();
 		
-		$smarty->assign('activemenu', "index");
+		$db = db_connect();	//\Config\Database::connect();
+		$query = $db->query("SELECT * FROM feladatok ORDER BY fid;");
+		$feladatok = $query->getResult();
+
+		
+		$smarty->assign("feladatlista", $feladatok);
+		$smarty->assign("activemenu", "index");
 		$smarty->display("mainTemplate.tpl");
 	}
 	

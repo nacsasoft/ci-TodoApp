@@ -5,3 +5,9 @@ $(function() {
         $(this).addClass('active'); //és hozzáadása az éppen kiválasztotthoz
     })
 })
+
+$(function() {
+    $('p').click(function(){
+        alert($(this).attr('id'));
+    })
+})

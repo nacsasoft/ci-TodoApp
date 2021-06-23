@@ -45,7 +45,19 @@
             {* Tartalom : *}
             <section class="BodyMain">
                 {block name=BodyMain}
-                    <h1 class="m-5 ">Feladatlista...</h1>
+                    <h1 class="m-5">Feladatlista...</h1>
+                    <div class="row" style="min-height: 65vh;">
+                        <div class="col-md-3 offset-md-1 border border-primary">
+                            {* itt lesznek a feladatok *}
+                            {foreach $feladatlista as $value}
+                                <p class="feladatlista" id="{$value->fid}">{$value->fcim}</p>
+                            {/foreach}
+                        </div>
+                        <div class="col-md-6 border border-primary">
+                            {* ide csak a kiválasztott feladat kerül *}
+                            {$kivalasztott_feladat|default:""}
+                        </div>
+                    </div>
                 {/block}
             </section>
 
