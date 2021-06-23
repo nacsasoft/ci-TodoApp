@@ -13,7 +13,8 @@
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
-        <title>Hello, world!</title>
+    <title>{block name=title}ci-TodoApp - Főoldal{/block}</title>
+
     </head>
     <body class="bg-light">
         <div class="mainContainer">
@@ -28,10 +29,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.php">Kezdőlap<span class="sr-only">(current)</span></a>
+                            <a class="nav-link {if $activemenu == 'index'}active{/if}" href="index.php">Kezdőlap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link {if $activemenu == 'ujFeladat'}active{/if}" href="ujFeladat">Új feladat</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -44,7 +45,7 @@
             {* Tartalom : *}
             <section class="BodyMain">
                 {block name=BodyMain}
-                    <h1 class="text-uppercase">Hello, world!</h1>
+                    <h1 class="m-5 ">Feladatlista...</h1>
                 {/block}
             </section>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-21 14:19:42
+/* Smarty version 3.1.39, created on 2021-06-23 09:39:02
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d0e64e522851_01299995',
+  'unifunc' => 'content_60d347864f0749_82705106',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6fba66191803b5c07127960dfa2e20181a8b369' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl',
-      1 => 1624303181,
+      1 => 1624459139,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d0e64e522851_01299995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d347864f0749_82705106 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -38,7 +38,11 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
-        <title>Hello, world!</title>
+    <title><?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_201112833260d347864eac78_94084571', 'title');
+?>
+</title>
+
     </head>
     <body class="bg-light">
         <div class="mainContainer">
@@ -53,10 +57,10 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.php">Kezdőlap<span class="sr-only">(current)</span></a>
+                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'index') {?>active<?php }?>" href="index.php">Kezdőlap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'ujFeladat') {?>active<?php }?>" href="ujFeladat">Új feladat</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -68,7 +72,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_162851844060d0e64e5214d5_04862401', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_93442918560d347864ef915_78004572', 'BodyMain');
 ?>
 
             </section>
@@ -103,19 +107,34 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_162851844060d0e64e
 
     </body>
 </html><?php }
+/* {block 'title'} */
+class Block_201112833260d347864eac78_94084571 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'title' => 
+  array (
+    0 => 'Block_201112833260d347864eac78_94084571',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+ci-TodoApp - Főoldal<?php
+}
+}
+/* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_162851844060d0e64e5214d5_04862401 extends Smarty_Internal_Block
+class Block_93442918560d347864ef915_78004572 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_162851844060d0e64e5214d5_04862401',
+    0 => 'Block_93442918560d347864ef915_78004572',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-                    <h1 class="text-uppercase">Hello, world!</h1>
+                    <h1 class="m-5 ">Feladatlista...</h1>
                 <?php
 }
 }
