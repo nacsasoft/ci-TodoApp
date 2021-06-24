@@ -1,0 +1,36 @@
+CRITICAL - 2021-06-24 10:03:35 --> Undefined variable: db
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/Home.php(24): App\Models\TodoAppModel->get_all_todo()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-24 10:04:37 --> Undefined variable: db
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/Home.php(24): App\Models\TodoAppModel->get_all_todo()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-24 12:30:56 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 12:32:01 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

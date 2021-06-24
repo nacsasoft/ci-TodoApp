@@ -9,6 +9,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+        <!-- Font a BS-hez -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
@@ -46,8 +48,8 @@
             <section class="BodyMain">
                 {block name=BodyMain}
                     <h1 class="m-5">Feladatlista...</h1>
-                    <div class="row" style="min-height: 65vh;">
-                        <div class="col-md-3 offset-md-1 border border-primary">
+                    <div class="row ml-2 mr-2 justify-content-center" style="min-height: 65vh;">
+                        <div class="col-md-3  border border-primary">
                             {* itt lesznek a feladatok *}
                             {foreach $feladatlista as $value}
                                 <p class="feladatlista" id="{$value->fid}">{$value->fcim}</p>

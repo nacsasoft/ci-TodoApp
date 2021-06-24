@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 12:35:12
+/* Smarty version 3.1.39, created on 2021-06-24 11:55:14
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d370d064cc54_48155651',
+  'unifunc' => 'content_60d4b8f2a77d48_84660578',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6fba66191803b5c07127960dfa2e20181a8b369' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl',
-      1 => 1624469710,
+      1 => 1624553713,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d370d064cc54_48155651 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d4b8f2a77d48_84660578 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,12 +34,14 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+        <!-- Font a BS-hez -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_168200203560d370d063d969_68742033', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_166291066060d4b8f2a6a1f7_28147492', 'title');
 ?>
 </title>
 
@@ -72,7 +74,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_168200203560d370d0
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4151737860d370d06424f1_68866984', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_65777853760d4b8f2a6e075_29465108', 'BodyMain');
 ?>
 
             </section>
@@ -108,12 +110,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4151737860d370d064
     </body>
 </html><?php }
 /* {block 'title'} */
-class Block_168200203560d370d063d969_68742033 extends Smarty_Internal_Block
+class Block_166291066060d4b8f2a6a1f7_28147492 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_168200203560d370d063d969_68742033',
+    0 => 'Block_166291066060d4b8f2a6a1f7_28147492',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -123,20 +125,20 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_4151737860d370d06424f1_68866984 extends Smarty_Internal_Block
+class Block_65777853760d4b8f2a6e075_29465108 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_4151737860d370d06424f1_68866984',
+    0 => 'Block_65777853760d4b8f2a6e075_29465108',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
                     <h1 class="m-5">Feladatlista...</h1>
-                    <div class="row" style="min-height: 65vh;">
-                        <div class="col-md-3 offset-md-1 border border-primary">
+                    <div class="row ml-2 mr-2 justify-content-center" style="min-height: 65vh;">
+                        <div class="col-md-3  border border-primary">
                                                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['feladatlista']->value, 'value');
 $_smarty_tpl->tpl_vars['value']->do_else = true;

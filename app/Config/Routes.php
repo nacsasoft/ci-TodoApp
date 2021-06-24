@@ -32,9 +32,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('(:any)', 'Home::ujFeladat');
-$routes->get('(:any)', 'Home::feladatSzerkesztese');
+$routes->get('/', 'TodoAppController::index');
+$routes->get('(:any)', 'TodoAppController::ujFeladat');
+$routes->get('(:any)', 'TodoAppController::feladatSzerkesztese');
 
 //$routes->get('(:any)', 'Home::view/$1');
 
