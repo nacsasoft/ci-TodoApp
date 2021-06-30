@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-29 09:51:49
+/* Smarty version 3.1.39, created on 2021-06-30 11:53:29
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60db33851d3837_37681876',
+  'unifunc' => 'content_60dca18922d6d6_82346541',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6fba66191803b5c07127960dfa2e20181a8b369' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/mainTemplate.tpl',
-      1 => 1624978306,
+      1 => 1625072007,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60db33851d3837_37681876 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60dca18922d6d6_82346541 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -40,7 +40,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_175289926360db33851c5785_82325677', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_191529285660dca18921e394_20643493', 'title');
 ?>
 </title>
 
@@ -73,7 +73,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_175289926360db3385
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_122192928260db33851c9de6_87053651', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_187448804960dca189223a94_11895458', 'BodyMain');
 ?>
 
             </section>
@@ -109,12 +109,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_122192928260db3385
     </body>
 </html><?php }
 /* {block 'title'} */
-class Block_175289926360db33851c5785_82325677 extends Smarty_Internal_Block
+class Block_191529285660dca18921e394_20643493 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_175289926360db33851c5785_82325677',
+    0 => 'Block_191529285660dca18921e394_20643493',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -124,12 +124,12 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_122192928260db33851c9de6_87053651 extends Smarty_Internal_Block
+class Block_187448804960dca189223a94_11895458 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_122192928260db33851c9de6_87053651',
+    0 => 'Block_187448804960dca189223a94_11895458',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

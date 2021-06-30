@@ -31,9 +31,11 @@
 
 
 {literal}
+
 <script type="text/javascript">
 /* Új adatok vagy a módosított adatok mentése AJX-al */
 var uj_szerkeszt;    //értéke lehet : "ujfelvitel" vagy "frissites"
+
 
 function ujFelvitel() {
     uj_szerkeszt = 'ujfelvitel';
@@ -47,22 +49,23 @@ function adatokMentese() {
 
     if (uj_szerkeszt == 'ujfelvitel') {
         //új feladatot kell felvenni:
-        url = "<?php echo site_url('public/index.php/ujFelvitel')?>";
+        url = 'ujFelvitel';
         //url = "index.php/ujFelvitel";
     }
 
     // feladat hozzáadása AJAX-al:
     $.ajax({
-        url : url,
+        url : 'ujFelvitel',
+        headers: {'X-Requested-With': 'XMLHttpRequest'},
         type: "POST",
         data: $('#form').serialize(),
         contentType: 'application/json',
         dataType: "JSON",
         success: function(data)
         {
-           //if success close modal and reload ajax table
-           //$('#modal_form').modal('hide');
-          location.replace("index.php");
+            //if success close modal and reload ajax table
+            //$('#modal_form').modal('hide');
+            location.replace("index.php");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
@@ -71,6 +74,7 @@ function adatokMentese() {
     });
 }
 </script>
+
 {/literal}
 
 {/block}
