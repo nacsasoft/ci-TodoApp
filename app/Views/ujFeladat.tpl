@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="txtFeladatLeiras">Feladat részletei</label> 
+            <label for="txaFeladatLeiras">Feladat részletei</label> 
             <textarea id="txaFeladatLeiras" name="txaFeladatLeiras" cols="40" rows="5" aria-describedby="txaFeladatLeirasHelpBlock" required="required" class="form-control"></textarea> 
             <span id="txaFeladatLeirasHelpBlock" class="form-text text-muted">Írja ide a fealadat részleteit!</span>
         </div> 
@@ -28,5 +28,49 @@
             <a href="index.php" class="btn btn-secondary float-right">Mégsem</a>
         </div>
 </form>
+
+
+{literal}
+<script type="text/javascript">
+/* Új adatok vagy a módosított adatok mentése AJX-al */
+var uj_szerkeszt;    //értéke lehet : "ujfelvitel" vagy "frissites"
+
+function ujFelvitel() {
+    uj_szerkeszt = 'ujfelvitel';
+    adatokMentese();
+    //$('#form')[0].reset();  //form adatok törlése  -ezt majd a sikeres művelet végén!!
+
+}
+
+function adatokMentese() {
+    var url;
+
+    if (uj_szerkeszt == 'ujfelvitel') {
+        //új feladatot kell felvenni:
+        url = "<?php echo site_url('public/index.php/ujFelvitel')?>";
+        //url = "index.php/ujFelvitel";
+    }
+
+    // feladat hozzáadása AJAX-al:
+    $.ajax({
+        url : url,
+        type: "POST",
+        data: $('#form').serialize(),
+        contentType: 'application/json',
+        dataType: "JSON",
+        success: function(data)
+        {
+           //if success close modal and reload ajax table
+           //$('#modal_form').modal('hide');
+          location.replace("index.php");
+        },
+        error: function (jqXHR, textStatus, errorThrown)
+        {
+            alert('Error adding / update data');
+        }
+    });
+}
+</script>
+{/literal}
 
 {/block}

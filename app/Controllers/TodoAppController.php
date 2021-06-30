@@ -40,7 +40,7 @@ class TodoAppController extends BaseController
 	public function ujFelvitel()
 	{
 		//uj feladat
-
+	die("OK");
 		//form adatok ésaz url biztonságos betöltése:
 		helper(['form', 'url']);
 
