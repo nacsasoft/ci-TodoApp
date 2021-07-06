@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-29 12:05:04
+/* Smarty version 3.1.39, created on 2021-06-30 12:21:00
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/ujFeladat.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60db52c0197343_46524498',
+  'unifunc' => 'content_60dca7fc1ff991_89509674',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '505ad94183b77c67016c4e6314200f01b4ff3933' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/ujFeladat.tpl',
-      1 => 1624986292,
+      1 => 1625073656,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60db52c0197343_46524498 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60dca7fc1ff991_89509674 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_139812982460db52c0195025_18513542', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178615131160dca7fc1fdf33_08133747', 'title');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_163508948760db52c0195e34_83162733', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_25133675560dca7fc1fec67_61080048', 'BodyMain');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "mainTemplate.tpl");
 }
 /* {block 'title'} */
-class Block_139812982460db52c0195025_18513542 extends Smarty_Internal_Block
+class Block_178615131160dca7fc1fdf33_08133747 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_139812982460db52c0195025_18513542',
+    0 => 'Block_178615131160dca7fc1fdf33_08133747',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -51,12 +51,12 @@ ci-TodoApp - Új feladat<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_163508948760db52c0195e34_83162733 extends Smarty_Internal_Block
+class Block_25133675560dca7fc1fec67_61080048 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_163508948760db52c0195e34_83162733',
+    0 => 'Block_25133675560dca7fc1fec67_61080048',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -89,10 +89,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 
 
+
 <?php echo '<script'; ?>
  type="text/javascript">
 /* Új adatok vagy a módosított adatok mentése AJX-al */
 var uj_szerkeszt;    //értéke lehet : "ujfelvitel" vagy "frissites"
+
 
 function ujFelvitel() {
     uj_szerkeszt = 'ujfelvitel';
@@ -106,24 +108,23 @@ function adatokMentese() {
 
     if (uj_szerkeszt == 'ujfelvitel') {
         //új feladatot kell felvenni:
-        url = "<?php echo '<?php'; ?>
- echo site_url('public/index.php/ujFelvitel')<?php echo '?>'; ?>
-";
+        url = 'ujFelvitel';
         //url = "index.php/ujFelvitel";
     }
 
     // feladat hozzáadása AJAX-al:
     $.ajax({
-        url : url,
+        url : 'ujFelvitel',
+        headers: {'X-Requested-With': 'XMLHttpRequest'},
         type: "POST",
         data: $('#form').serialize(),
         contentType: 'application/json',
         dataType: "JSON",
         success: function(data)
         {
-           //if success close modal and reload ajax table
-           //$('#modal_form').modal('hide');
-          location.replace("index.php");
+            //if success close modal and reload ajax table
+            //$('#modal_form').modal('hide');
+            location.replace("index.php");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
@@ -133,6 +134,7 @@ function adatokMentese() {
 }
 <?php echo '</script'; ?>
 >
+
 
 
 <?php
