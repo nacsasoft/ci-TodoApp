@@ -1,0 +1,22 @@
+ERROR - 2021-06-30 10:25:21 --> Error connecting to the database: Unknown database 'ci-TodoApp'
+CRITICAL - 2021-06-30 10:25:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci-TodoApp'
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Models/TodoAppModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Controllers/TodoAppController.php(24): App\Models\TodoAppModel->get_all_todo()
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->index()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-06-30 10:25:25 --> Error connecting to the database: Unknown database 'ci-TodoApp'
+CRITICAL - 2021-06-30 10:25:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci-TodoApp'
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Models/TodoAppModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Controllers/TodoAppController.php(24): App\Models\TodoAppModel->get_all_todo()
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->index()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
