@@ -55,17 +55,19 @@ function adatokMentese() {
 
     // feladat hozzáadása AJAX-al:
     $.ajax({
-        url : 'ujFelvitel',
+        url : 'TodoAppController/ujFelvitel',
         headers: {'X-Requested-With': 'XMLHttpRequest'},
         type: "POST",
         data: $('#form').serialize(),
-        contentType: 'application/json',
+        contentType: 'application/json; charset=utf-8',
         dataType: "JSON",
         success: function(data)
         {
             //if success close modal and reload ajax table
             //$('#modal_form').modal('hide');
-            location.replace("index.php");
+            console.log("Pure jQuery Pure JS object");
+            //console.log( returnedJson );
+            //location.replace("index.php");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {

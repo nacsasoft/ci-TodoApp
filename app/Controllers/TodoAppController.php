@@ -40,15 +40,19 @@ class TodoAppController extends BaseController
 	public function ujFelvitel()
 	{
 		//uj feladat
-	die("OK");
+	//die("OK");
 		//form adatok ésaz url biztonságos betöltése:
 		helper(['form', 'url']);
 
 		$this->TodoAppModel = new TodoAppModel();
 
-		$data = array(
+		/* $data = array(
 			"fcim" => $this->request->getPost(txtFeladatCim),
 			"fleiras" => $this->request->getPost(txtFeladatLeiras)
+		); */
+		$data = array(
+			"fcim" => "BUMM",
+			"fleiras" => "Bumm leírása..."
 		);
 
 		$insert = $this->TodoAppModel->add_new($data);
