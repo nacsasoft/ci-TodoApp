@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-06 12:33:28
+/* Smarty version 3.1.39, created on 2021-07-06 12:43:03
   from '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/ujFeladat.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60e493e871e0e5_92950750',
+  'unifunc' => 'content_60e49627932e56_42676225',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '505ad94183b77c67016c4e6314200f01b4ff3933' => 
     array (
       0 => '/opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Views/ujFeladat.tpl',
-      1 => 1625592805,
+      1 => 1625593378,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60e493e871e0e5_92950750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60e49627932e56_42676225 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_154225082860e493e871c222_48565047', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_100056109860e49627931021_60086929', 'title');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_124670228560e493e871d287_37531406', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_157798067060e49627931f62_38484354', 'BodyMain');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "mainTemplate.tpl");
 }
 /* {block 'title'} */
-class Block_154225082860e493e871c222_48565047 extends Smarty_Internal_Block
+class Block_100056109860e49627931021_60086929 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_154225082860e493e871c222_48565047',
+    0 => 'Block_100056109860e49627931021_60086929',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -51,12 +51,12 @@ ci-TodoApp - Új feladat<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_124670228560e493e871d287_37531406 extends Smarty_Internal_Block
+class Block_157798067060e49627931f62_38484354 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_124670228560e493e871d287_37531406',
+    0 => 'Block_157798067060e49627931f62_38484354',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -126,7 +126,7 @@ function adatokMentese() {
             //$('#modal_form').modal('hide');
             console.log("Pure jQuery Pure JS object");
             //console.log( returnedJson );
-            //location.replace("index.php");
+            location.replace("index.php");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {

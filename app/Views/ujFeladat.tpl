@@ -67,7 +67,7 @@ function adatokMentese() {
             //$('#modal_form').modal('hide');
             console.log("Pure jQuery Pure JS object");
             //console.log( returnedJson );
-            //location.replace("index.php");
+            location.replace("index.php");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
