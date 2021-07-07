@@ -1,0 +1,226 @@
+CRITICAL - 2021-07-07 11:38:24 --> Use of undefined constant txtFeladatCim - assumed 'txtFeladatCim' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+ERROR - 2021-07-07 11:43:38 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 11:43:38 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 11:43:52 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 11:43:52 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 11:45:04 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 11:45:04 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+CRITICAL - 2021-07-07 11:45:24 --> Use of undefined constant txtFeladatCim - assumed 'txtFeladatCim' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-07-07 11:52:52 --> Use of undefined constant txtFeladatCim - assumed 'txtFeladatCim' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-07-07 11:53:06 --> Use of undefined constant txtFeladatCim - assumed 'txtFeladatCim' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+ERROR - 2021-07-07 11:55:34 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 11:55:34 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 11:56:18 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 11:56:18 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 12:02:45 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 12:02:45 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 12:03:00 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 12:03:00 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 12:11:02 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 12:11:02 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(59): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+ERROR - 2021-07-07 12:13:57 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 12:13:57 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(63): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+CRITICAL - 2021-07-07 12:15:59 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 58, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-07-07 12:17:31 --> syntax error, unexpected '"fcim"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2021-07-07 12:31:42 --> Undefined variable: request
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 58, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-07-07 12:32:56 --> Argument 2 passed to dot_array_search() must be of the type array, null given, called in /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 599
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(599): dot_array_search('txtFeladatCim', NULL)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(559): CodeIgniter\HTTP\IncomingRequest->getJsonVar('txtFeladatCim', false, NULL, NULL)
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(58): CodeIgniter\HTTP\IncomingRequest->getVar('txtFeladatCim')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2021-07-07 12:35:47 --> Argument 2 passed to dot_array_search() must be of the type array, null given, called in /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 599
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(599): dot_array_search('txtFeladatCim', NULL)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(58): CodeIgniter\HTTP\IncomingRequest->getJsonVar('txtFeladatCim')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#7 {main}
+ERROR - 2021-07-07 12:50:25 --> Column 'fcim' cannot be null
+CRITICAL - 2021-07-07 12:50:25 --> Column 'fcim' cannot be null
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `fe...')
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fe...')
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fe...')
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fe...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Models/TodoAppModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(68): App\Models\TodoAppModel->add_new(Array)
+#6 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#7 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#8 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#11 {main}
+CRITICAL - 2021-07-07 13:01:16 --> Use of undefined constant txtFeladatCim - assumed 'txtFeladatCim' (this will throw an Error in a future version of PHP)
+#0 /opt/lampp/htdocs/codeigniter/ci-TodoApp/app/Controllers/TodoAppController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/opt/lampp/htdo...', 53, Array)
+#1 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFelvitel()
+#2 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/codeigniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/codeigniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}

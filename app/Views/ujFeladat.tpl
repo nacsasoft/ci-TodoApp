@@ -6,7 +6,7 @@
     {block name=BodyMain}
     <h1 class="m-5">Új feladat felvitele...</h1>
 
-    <form action="#" id="form" class="col-lg-8">
+    <form action="#" id="myform" class="col-lg-8">
         <div class="form-group">
             <label for="txtFeladatCim">Feladat címe</label> 
                 <div class="input-group">
@@ -24,7 +24,7 @@
             <span id="txaFeladatLeirasHelpBlock" class="form-text text-muted">Írja ide a fealadat részleteit!</span>
         </div> 
         <div class="form-group">
-            <button type="submit" id="btnUjFelvitel" class="btn btn-primary" onclick="ujFelvitel()">Új feladat rögzítése</button>
+            <button type="button" id="btnUjFelvitel" class="btn btn-primary" onclick="ujFelvitel()">Új feladat rögzítése</button>
             <a href="index.php" class="btn btn-secondary float-right">Mégsem</a>
         </div>
 </form>
@@ -49,22 +49,22 @@ function adatokMentese() {
 
     if (uj_szerkeszt == 'ujfelvitel') {
         //új feladatot kell felvenni:
-        url = 'ujFelvitel';
-        //url = "index.php/ujFelvitel";
+        url = 'TodoAppController/ujFelvitel';
     }
 
     // feladat hozzáadása AJAX-al:
     $.ajax({
-        url : 'TodoAppController/ujFelvitel',
+        url : url,
         headers: {'X-Requested-With': 'XMLHttpRequest'},
         type: "POST",
-        data: $('#form').serialize(),
+        data: { "txtFeladatCim": "nacsa", "txaFeladatLeiras": "DUMADUMA" },          //$('#myform').serialize(),
         contentType: 'application/json; charset=utf-8',
         dataType: "JSON",
         success: function(data)
         {
             //if success close modal and reload ajax table
             //$('#modal_form').modal('hide');
+            alert(data);
             console.log("Pure jQuery Pure JS object");
             //console.log( returnedJson );
             location.replace("index.php");
