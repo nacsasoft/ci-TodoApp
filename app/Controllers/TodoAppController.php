@@ -43,15 +43,15 @@ class TodoAppController extends BaseController
 		//uj feladat felvitel
 	
 		//form adatok és begyüjtése az url biztonságos betöltése:
-		//helper(['form', 'url']);
+		helper(['form', 'url']);
 
 		if (! $this->request->isAJAX()) {
 			die("BUMM");
 		}
 
-		$query = service('request')->getPost('txtFeladatCim');
-    	var_dump($this->request->getPost('txtFeladatCim'));
-		die("OK");
+		//$query = service('request')->getPost('txtFeladatCim');
+    	//var_dump($this->request->getPost('txtFeladatCim'));
+		//die("OK");
 
 
 
@@ -59,11 +59,11 @@ class TodoAppController extends BaseController
 		$this->TodoAppModel = new TodoAppModel();
 
 		$data = array(
-			'fcim' => $this->request->getPost('txtFeladatCim'),
-			'fleiras' => $this->request->getPost('txaFeladatLeiras')
+			'fcim' => $this->request->getVar('txtFeladatCim'),
+			'fleiras' => $this->request->getVar('txaFeladatLeiras')
 		); 
 
-		die($this->request->getPost('txtFeladatCim'));
+		//die($this->request->getPost('txtFeladatCim'));
 
 		/* $data = array(
 			"fcim" => "BUMM",
@@ -71,7 +71,14 @@ class TodoAppController extends BaseController
 		);*/
 
 		$insert = $this->TodoAppModel->add_new($data);
-		echo json_encode(array("status" => TRUE));
+
+		$data = [
+			'success' => true,
+			'data' => $insert,
+			'msg' => "Thanks for contact us. We get back to you"
+		   ];
+	 
+		   return $this->response->setJSON($data);
 		
 	}
 }
