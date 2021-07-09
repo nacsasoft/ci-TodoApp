@@ -75,7 +75,7 @@ class TodoAppController extends BaseController
 		$data = [
 			'success' => true,
 			'data' => $insert,
-			'msg' => "Thanks for contact us. We get back to you"
+			'msg' => "Az új feladat felvitele sikeres volt! Hamarosan visszirányítjuk a kezdőlapra!"
 		   ];
 	 
 		   return $this->response->setJSON($data);

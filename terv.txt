@@ -25,6 +25,8 @@ TodoApp leírása:
             -BodyFooter szekció:    -OK
                 -"Copyright 2021" + "by Nagy Csaba e.v."
             
+-----------------------------------------------------------------------------------------------------------------------
+
     - Feladatok listázása, alapnézet (mainTemplate.tpl) + A KERESÉS EREMÉNYE IS IDE KERÜL!!!!
         - nav bővítése : "Új feladat" -al (menüből is elérhető legyen)  -OK
         -BodyMain szekció:
@@ -33,6 +35,8 @@ TodoApp leírása:
             -gombok: "Törlés" + "Szerkesztés" + "Küldés..." + "Új feladat"
                 -Küldés:
                     -email cím bekérése, ell. és küldés....
+
+-----------------------------------------------------------------------------------------------------------------------
     
     - Új feladat felvitele (ujFeladat.tpl):
         -BodyMain szekció:
@@ -47,6 +51,8 @@ TodoApp leírása:
                 "Mégsem": 
                     -alert??? vissza a főoldalra...
 
+-----------------------------------------------------------------------------------------------------------------------
+
     - Kiválasztott feladat szerkesztése (feladatSzerkesztese.tpl):
         -BodyMain szekció:
             Cím
@@ -59,6 +65,8 @@ TodoApp leírása:
                     -vissza a főoldalra
                 "Mégsem": 
                     -alert??? vissza a főoldalra...
+
+-----------------------------------------------------------------------------------------------------------------------
 
     - Kiválasztott feladat törlése:
         -Alert : Biztos hogy törlöd a "című..." feladatot?
