@@ -11,7 +11,7 @@
         public function __construct() {
             parent::__construct();
 
-            //Model hozzákapcsolása a db-hez:
+            //kapcsolódás a db-hez:
             $db = db_connect();	//\Config\Database::connect();
         }
 

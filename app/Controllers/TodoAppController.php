@@ -18,6 +18,7 @@ class TodoAppController extends BaseController
 
 	public function index()
 	{
+		
 		$smarty = Services::smarty();
 		
 		//lekérjük a modeltől az összes feladatot:
@@ -46,29 +47,15 @@ class TodoAppController extends BaseController
 		helper(['form', 'url']);
 
 		if (! $this->request->isAJAX()) {
-			die("BUMM");
+			die("AJAX kérési hiba!");
 		}
-
-		//$query = service('request')->getPost('txtFeladatCim');
-    	//var_dump($this->request->getPost('txtFeladatCim'));
-		//die("OK");
-
-
-
 
 		$this->TodoAppModel = new TodoAppModel();
 
 		$data = array(
 			'fcim' => $this->request->getVar('txtFeladatCim'),
 			'fleiras' => $this->request->getVar('txaFeladatLeiras')
-		); 
-
-		//die($this->request->getPost('txtFeladatCim'));
-
-		/* $data = array(
-			"fcim" => "BUMM",
-			"fleiras" => "Bumm leírása..."
-		);*/
+		);
 
 		$insert = $this->TodoAppModel->add_new($data);
 
