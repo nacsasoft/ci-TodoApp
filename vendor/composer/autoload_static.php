@@ -27,6 +27,7 @@ class ComposerStaticInitce4b46e6942ee0c2ab7870a613eaee1e
         'T' => 
         array (
             'Tests\\Support\\' => 14,
+            'Tatter\\Assets\\' => 14,
         ),
         'S' => 
         array (
@@ -83,6 +84,10 @@ class ComposerStaticInitce4b46e6942ee0c2ab7870a613eaee1e
         'Tests\\Support\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests/_support',
+        ),
+        'Tatter\\Assets\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tatter/assets/src',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (

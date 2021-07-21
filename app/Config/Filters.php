@@ -7,6 +7,10 @@ use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 
+use Tatter\Assets\Filters\AssetFilters;
+use Tatter\Asset\Config\Asset as Assets;
+
+
 class Filters extends BaseConfig
 {
 	/**
@@ -19,6 +23,7 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
+		'assets' => Assets::class,
 	];
 
 	/**
@@ -34,6 +39,7 @@ class Filters extends BaseConfig
 		],
 		'after'  => [
 			'toolbar',
+			'assets' => ['except' => 'api/*'],
 			// 'honeypot',
 		],
 	];
