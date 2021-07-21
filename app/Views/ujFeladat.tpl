@@ -36,12 +36,6 @@
         </div>
     </div>
 
-    {literal}
-        <script type="text/javascript">
-    
-        {$asset}
-        
-        </script>
-    {/literal}
+    <script src="assets/{$jsfile}.js" type="text/javascript"></script>
 
 {/block}

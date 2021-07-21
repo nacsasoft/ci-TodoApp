@@ -9,7 +9,11 @@
 /* menü aktív link beállítása */
 .navbar-dark .nav-item > .nav-link.active  {
     color:white;
+    font-weight: bold;
     background-color: red;
+}
+.navbar-dark .nav-item:hover {
+    font-weight: bold;
 }
 
 .feladatlista {

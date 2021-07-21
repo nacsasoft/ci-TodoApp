@@ -14,13 +14,6 @@
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script src="/scripts/myscripts.js"></script>
-
     <title>{block name=title}ci-TodoApp - Főoldal{/block}</title>
 
     </head>
@@ -44,8 +37,8 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Feladat keresése" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Keresés</button>
                     </form>
                 </div>
             </nav>
@@ -80,6 +73,13 @@
             </section>
 
         </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="scripts/global.js"></script>
 
     </body>
 </html>

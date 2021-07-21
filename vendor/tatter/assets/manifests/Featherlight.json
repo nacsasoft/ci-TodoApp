@@ -1,9 +1,0 @@
-{
-	"source": "bower-asset/featherlight/release",
-	"destination": "vendor/featherlight",
-	"resources": [
-		{
-			"source": "."
-		}
-	]
-}

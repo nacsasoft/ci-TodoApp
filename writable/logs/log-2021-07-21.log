@@ -3,3 +3,372 @@ CRITICAL - 2021-07-21 10:19:24 --> Class 'Tatter\Asset\Config\Asset' not found
 #1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #3 {main}
+CRITICAL - 2021-07-21 10:29:04 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:29:06 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:46:38 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:48:19 --> Class 'Tatter\Assets\Filter\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:48:43 --> Class 'Config\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:48:59 --> Class 'Tatter\Assets\Filters\AssetFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:51:08 --> Class 'Tatter\Assets\Filters\AssetFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:51:09 --> Class 'Tatter\Assets\Filters\AssetFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:51:21 --> Class 'Config\AssetFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:51:33 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:51:34 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:55:40 --> Class 'Tatter\Assets\Filter\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:55:56 --> Class 'Tatter\Assets\Filters\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:57:35 --> Class 'Config\AssetFilters' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 10:59:42 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 11:00:46 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 11:01:49 --> Class 'Tatter\Assets\Filters\Assets' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 11:02:06 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 11:09:50 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 11:09:52 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 11:10:39 --> Interface 'Config\FilterInterface' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#4 [internal function]: spl_autoload_call('Config\\Filters')
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(149): class_exists('Config\\Filters')
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#8 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(305): config('Filters')
+#9 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters(NULL, false)
+#10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(302): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#12 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters()
+#13 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(392): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#14 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-07-21 11:11:07 --> Class Config\Filters contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::before, CodeIgniter\Filters\FilterInterface::after)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 11:11:34 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 11:13:28 --> Class Config\AssetFilters contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::before, CodeIgniter\Filters\FilterInterface::after)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 11:14:31 --> Cannot declare class Config\AssetFilters, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 11:14:57 --> Cannot declare class Config\myAssetFilters, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 11:15:36 --> Cannot declare class Config\AssetFilters, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 11:15:37 --> Cannot declare class Config\AssetFilters, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 12:04:28 --> Class 'App\Controllers\Asset' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->ujFeladat()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-07-21 12:06:55 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 12:07:59 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 12:08:00 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 12:11:50 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 12:11:57 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 12:12:54 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 12:13:50 --> Class 'Config\assets' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:14:26 --> Class 'Config\Asset' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:14:44 --> Class 'Config\assets' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:14:52 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 12:16:30 --> Class 'Tatter\Assets\Filters\Assets' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:17:06 --> Class 'Tatter\Assets\AssetsFilters\Assets' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:17:41 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 12:18:19 --> Cannot instantiate interface CodeIgniter\Filters\FilterInterface
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:19:05 --> Config\Assets must implement CodeIgniter\Filters\FilterInterface.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(176): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('Config\\Assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-21 12:19:24 --> Cannot instantiate interface CodeIgniter\Filters\FilterInterface
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:42:11 --> Cannot instantiate interface CodeIgniter\Filters\FilterInterface
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:45:26 --> Class 'CodeIgniter\Filters\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:46:10 --> Class 'Tatter\Assets\Filters\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:55:17 --> Class 'Config\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 12:59:17 --> Class 'Tatter\Assets\Filters\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 13:06:37 --> Class 'Tatter\Assets\Filters\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 13:06:52 --> Class 'Config\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-07-21 13:09:39 --> Interface 'Config\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#4 [internal function]: spl_autoload_call('Config\\Filters')
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(149): class_exists('Config\\Filters')
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#8 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(305): config('Filters')
+#9 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters(NULL, false)
+#10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(302): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#12 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters()
+#13 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(392): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#14 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-07-21 13:10:12 --> Interface 'Tatter\Assets\Config\AssetsFilter' not found
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#4 [internal function]: spl_autoload_call('Config\\Filters')
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(149): class_exists('Config\\Filters')
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#8 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(305): config('Filters')
+#9 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters(NULL, false)
+#10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/Services.php(302): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#12 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters()
+#13 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(392): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#14 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-07-21 13:10:27 --> Cannot declare class Tatter\Assets\Config\Filters, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-21 13:15:08 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 13:16:39 --> Undefined property: Config\Filters::$aliases
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(544): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 544, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 13:22:09 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 13:22:10 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-21 13:22:11 --> assets filter must have a matching alias defined.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('assets')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(265): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

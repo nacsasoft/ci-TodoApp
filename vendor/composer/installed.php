@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '65453de98b51cf2c2f5daef808ac32a8d1e4c2a5',
+        'reference' => '5aff82ea3146484fa55fd3de87d837cd5e0c4142',
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '65453de98b51cf2c2f5daef808ac32a8d1e4c2a5',
+            'reference' => '5aff82ea3146484fa55fd3de87d837cd5e0c4142',
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -408,15 +408,6 @@
             'aliases' => array(),
             'reference' => '46cd95797e9df938fdd2b03693b5fca5e64b01ce',
             'dev_requirement' => true,
-        ),
-        'tatter/assets' => array(
-            'pretty_version' => 'v2.3.0',
-            'version' => '2.3.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../tatter/assets',
-            'aliases' => array(),
-            'reference' => '267220d437786e0ddb9d7681745f5942d95c543b',
-            'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.0',

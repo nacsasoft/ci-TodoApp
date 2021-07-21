@@ -29,6 +29,7 @@
                 success: function( response )
                 {
                     $('#btnUjFelvitel').html('Új feladat rögzítése');
+                    $('#btnUjFelvitel').prop('disabled', true);
                     $('#res_message').html(response.msg);
                     $('#res_message').show();
                     $('#res_message').removeClass('d-none');
@@ -38,6 +39,7 @@
                     setTimeout(function(){
                         $('#res_message').hide();
                         $('#res_message').html('');
+                        $('#btnUjFelvitel').prop('disabled', false);
                         location.replace("index.php");
                     },5000);
                     

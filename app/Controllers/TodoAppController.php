@@ -11,7 +11,6 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-//use Tatter\Assets\Asset;
 
 
 class TodoAppController extends BaseController
@@ -35,10 +34,11 @@ class TodoAppController extends BaseController
 	
 	public function ujFeladat()
 	{
-		$asset = new Asset('<script src="/assets/ujFeladat.js"></script>');
-
 		$smarty = Services::smarty();
-		$smarty->assign('asset', $asset);
+
+		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
+		//adom meg kiterjesztés nélkül:
+		$smarty->assign('jsfile', "ujFeladat"); 
 		$smarty->assign('activemenu', "ujFeladat");
 		$smarty->display("ujFeladat.tpl");
 		
