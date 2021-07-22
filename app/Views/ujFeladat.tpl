@@ -17,16 +17,16 @@
                                     <i class="fa fa-address-card"></i>
                                 </div>
                             </div> 
-                        <input name="txtFeladatCim" type="text" required="required" maxlength="50" class="form-control">
+                        <input name="txtFeladatCim" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="txaFeladatLeiras">Feladat részletei</label> 
-                    <textarea name="txaFeladatLeiras" cols="40" rows="5" aria-describedby="txaFeladatLeirasHelpBlock" required="required" class="form-control"></textarea> 
+                    <textarea name="txaFeladatLeiras" required minlength="2" cols="40" rows="5" aria-describedby="txaFeladatLeirasHelpBlock"  class="form-control"></textarea> 
                     <span id="txaFeladatLeirasHelpBlock" class="form-text text-muted">Írja ide a fealadat részleteit!</span>
                 </div> 
                 <div class="form-group">
-                    <button type="submit" id="btnUjFelvitel" class="btn btn-primary" onclick="adatokMentese()">Új feladat rögzítése</button>
+                    <button type="submit" id="btnUjFelvitel" class="btn btn-primary" onclick="ujFelvitelJS()">Új feladat rögzítése</button>
                     <a href="index.php" class="btn btn-secondary float-right">Mégsem</a>
                 </div>
             </form>

@@ -38,7 +38,7 @@ class TodoAppController extends BaseController
 
 		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
 		//adom meg kiterjesztés nélkül:
-		$smarty->assign('jsfile', "ujFeladat"); 
+		$smarty->assign('jsfile', "Feladat_ajax"); 
 		$smarty->assign('activemenu', "ujFeladat");
 		$smarty->display("ujFeladat.tpl");
 		

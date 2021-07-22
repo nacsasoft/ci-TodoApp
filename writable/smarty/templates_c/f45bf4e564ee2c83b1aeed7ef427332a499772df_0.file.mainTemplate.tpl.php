@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-21 14:23:05
+/* Smarty version 3.1.39, created on 2021-07-22 09:51:25
   from '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60f87419bb6130_08627625',
+  'unifunc' => 'content_60f985ed794ed2_58910772',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f45bf4e564ee2c83b1aeed7ef427332a499772df' => 
     array (
       0 => '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp/app/Views/mainTemplate.tpl',
-      1 => 1626895384,
+      1 => 1626965480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60f87419bb6130_08627625 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60f985ed794ed2_58910772 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -40,7 +40,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_207174985660f87419b97701_04364481', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_212631425260f985ed7739f9_19304921', 'title');
 ?>
 </title>
 
@@ -73,7 +73,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_207174985660f87419
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_150199519960f87419ba0fe9_86742474', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_160164612960f985ed77d2f1_60175530', 'BodyMain');
 ?>
 
             </section>
@@ -95,6 +95,10 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_150199519960f87419
  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"><?php echo '</script'; ?>
+>
+
+        <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
@@ -107,12 +111,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_150199519960f87419
     </body>
 </html><?php }
 /* {block 'title'} */
-class Block_207174985660f87419b97701_04364481 extends Smarty_Internal_Block
+class Block_212631425260f985ed7739f9_19304921 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_207174985660f87419b97701_04364481',
+    0 => 'Block_212631425260f985ed7739f9_19304921',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -122,12 +126,12 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_150199519960f87419ba0fe9_86742474 extends Smarty_Internal_Block
+class Block_160164612960f985ed77d2f1_60175530 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_150199519960f87419ba0fe9_86742474',
+    0 => 'Block_160164612960f985ed77d2f1_60175530',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
