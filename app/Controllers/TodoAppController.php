@@ -55,6 +55,23 @@ class TodoAppController extends BaseController
 			die("AJAX kérési hiba!");
 		}
 
+		$validation =  \Config\Services::validation();
+
+		$validation->setRules([
+			'txtFeladatCim' => 'required|min_length[5]|max_length[10]',
+			'txaFeladatLeiras' => 'required|min_length[2]'
+		]); 
+
+		if(! $validation->withRequest($this->request)->run())
+        {
+            //echo "ERROR"; //view('Signup', [ 'validation' => $this->validator, ]);
+			$validationErrors = $validation->getErrors();
+			echo $validation->listErrors();
+
+        }
+        else
+		{
+
 		$this->TodoAppModel = new TodoAppModel();
 
 		$data = array(
@@ -71,6 +88,8 @@ class TodoAppController extends BaseController
 		   ];
 	 
 		   return $this->response->setJSON($data);
+
+		}
 		
 	}
 }
