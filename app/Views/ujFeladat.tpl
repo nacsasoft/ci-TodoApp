@@ -6,6 +6,8 @@
     {block name=BodyMain}
     <h1 class="m-5">Új feladat felvitele...</h1>
 
+    <div class=""></div>
+
     <div class="col">
         <div class="row">
             <form action="javascript:void(0)" id="myform" class="col-lg-8">
@@ -31,6 +33,7 @@
                     <button type="submit" id="btnUjFelvitel" class="btn btn-primary" onclick="ujFelvitelJS()">Új feladat rögzítése</button>
                     <a href="index.php" class="btn btn-secondary float-right">Mégsem</a>
                 </div>
+                <div class=""></div>
             </form>
         </div>
         <div class="row">

@@ -30,11 +30,13 @@ class TodoAppController extends BaseController
 		$smarty->assign("feladatlista", $feladatok);
 		$smarty->assign("activemenu", "index");
 		$smarty->display("mainTemplate.tpl");
+
 	}
 	
 	public function ujFeladat()
 	{
 		$smarty = Services::smarty();
+
 
 		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
 		//adom meg kiterjesztés nélkül:
@@ -51,6 +53,7 @@ class TodoAppController extends BaseController
 		//form adatok és begyüjtése az url biztonságos betöltése:
 		helper(['form', 'url']);
 
+
 		if (! $this->request->isAJAX()) {
 			die("AJAX kérési hiba!");
 		}
@@ -60,7 +63,7 @@ class TodoAppController extends BaseController
 		$validation->setRules([
 			'txtFeladatCim' => 'required|min_length[5]|max_length[10]',
 			'txaFeladatLeiras' => 'required|min_length[2]'
-		]); 
+		]);
 
 		if(! $validation->withRequest($this->request)->run())
         {
@@ -68,11 +71,13 @@ class TodoAppController extends BaseController
 			$validationErrors = $validation->getErrors();
 			echo $validation->listErrors();
 
+
         }
         else
 		{
 
 		$this->TodoAppModel = new TodoAppModel();
+
 
 		$data = array(
 			'fcim' => $this->request->getVar('txtFeladatCim'),
