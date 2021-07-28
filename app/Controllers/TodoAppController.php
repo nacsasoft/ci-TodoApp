@@ -77,6 +77,7 @@ class TodoAppController extends BaseController
 							"required" => "Feladat leírása szövegmező kitöltése kötelező!",
 							"min_length" => "Feladat leírása minimum 2 karakter hosszú legyen!"
 						]
+				]
 		]);
 
 		//a formról átvett adatok megfelelnek a szabályoknak?

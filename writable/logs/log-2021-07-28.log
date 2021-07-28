@@ -26,3 +26,37 @@ CRITICAL - 2021-07-28 13:14:49 --> Cache unable to write to /opt/lampp/htdocs/Co
 #10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
 #11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/spark(66): CodeIgniter\CLI\Console->run()
 #12 {main}
+CRITICAL - 2021-07-28 13:18:32 --> Cache unable to write to /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/writable/cache/.
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Cache/Handlers/FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Cache/CacheFactory.php(55): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Config/Services.php(110): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('cache', Array)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Config/Services.php(105): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::cache()
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Common.php(74): CodeIgniter\Config\BaseService::__callStatic('cache', Array)
+#8 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(651): cache()
+#9 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(321): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/spark(66): CodeIgniter\CLI\Console->run()
+#12 {main}
+CRITICAL - 2021-07-28 13:19:11 --> syntax error, unexpected ')', expecting ']'
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-28 13:20:13 --> syntax error, unexpected ')', expecting ']'
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
