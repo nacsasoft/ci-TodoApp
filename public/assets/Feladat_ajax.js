@@ -68,25 +68,39 @@ function adatokMentese() {
         dataType: "json",
         success: function( response )
         {
-            $('#btnUjFelvitel').html('Új feladat rögzítése');
-            $('#btnUjFelvitel').prop('disabled', true);
-            $('#res_message').html(response.msg);
-            $('#res_message').show();
-            $('#res_message').removeClass('d-none');
-
-            $("#myform").trigger("reset"); 
-            
-            setTimeout(function(){
-                $('#res_message').hide();
-                $('#res_message').html('');
+            if (response.server_error) {
+                //beviteli hiba van a szerveren:
+                $('#btnUjFelvitel').html('Új feladat rögzítése');
                 $('#btnUjFelvitel').prop('disabled', false);
-                location.replace("index.php");
-            },5000);
+                $('#res_message').html(response.msg);
+                $('#res_message').show();
+                $('#res_message').removeClass('d-none');
+                $('#res_message').removeClass('alert-success');
+                $('#res_message').addClass('alert-warning');
+            }
+            else {
+                $('#btnUjFelvitel').html('Új feladat rögzítése');
+                $('#btnUjFelvitel').prop('disabled', true);
+                $('#res_message').html(response.msg);
+                $('#res_message').show();
+                $('#res_message').removeClass('d-none');
+                //ha esetleg még ki lenne rakva a hiba akkor azt törölni kell és
+                //jelezni a sikeres felvitelt:
+                if ( $('#res_message').hasClass("alert-warning") ) {
+                    $('#res_message').removeClass('alert-warning');
+                    $('#res_message').addClass('alert-success');       
+                }
+
+                $("#myform").trigger("reset"); 
+                
+                setTimeout(function(){
+                    $('#res_message').hide();
+                    $('#res_message').html('');
+                    $('#btnUjFelvitel').prop('disabled', false);
+                    location.replace("index.php");
+                },5000);
+            }   
             
-        },
-        error: function (jqXHR, textStatus, errorThrown)
-        {
-            alert('AJAX hiba!!');
         }
     });
 }
