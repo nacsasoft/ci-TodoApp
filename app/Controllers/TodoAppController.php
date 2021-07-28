@@ -48,9 +48,10 @@ class TodoAppController extends BaseController
 
 	public function ujFelvitel()
 	{
+		
 		//uj feladat felvitel
 	
-		//form adatok és begyüjtése az url biztonságos betöltése:
+		//form adatok begyüjtése és az url biztonságos betöltése:
 		helper(['form', 'url']);
 
 
@@ -60,39 +61,58 @@ class TodoAppController extends BaseController
 
 		$validation =  \Config\Services::validation();
 
+		//ellenörzési szabályok létrehozása a hibaüzenetekkel együtt:
 		$validation->setRules([
-			'txtFeladatCim' => 'required|min_length[5]|max_length[10]',
-			'txaFeladatLeiras' => 'required|min_length[2]'
+			"txtFeladatCim" => [
+				"rules" => "required|min_length[5]|max_length[25]",
+				"errors" => [
+							"required" => "Feladat címe mező kitöltése kötelező!",
+							"min_length" => "Feladat címe minimum 5 karakter hosszú legyen!",
+							"max_length" => "Feladat címe maximum 25 karakter hosszú lehet!"
+						]
+				],
+			"txaFeladatLeiras" => [
+				"rules" => "required|min_length[2]",
+				"errors" => [
+							"required" => "Feladat leírása szövegmező kitöltése kötelező!",
+							"min_length" => "Feladat leírása minimum 2 karakter hosszú legyen!"
+						]
 		]);
 
+		//a formról átvett adatok megfelelnek a szabályoknak?
 		if(! $validation->withRequest($this->request)->run())
         {
-            //echo "ERROR"; //view('Signup', [ 'validation' => $this->validator, ]);
-			$validationErrors = $validation->getErrors();
-			echo $validation->listErrors();
-
-
+        	//hiba va az átvett adatokkal, lekérjük a konkrét hibát a fentebb megadott szabályból:
+			$cimError = $validation->getError("txtFeladatCim");
+			$leirasError = $validation->getError("txaFeladatLeiras");
+							
+			//user tájékoztatása a szerveroldali hibáról:	
+			$data = [
+				'server_error' => true,
+				'msg' => "Az új feladat felvitele sikertelen volt!\n" . $cimError . "\n" . $leirasError
+			   ];
+		 
+			return $this->response->setJSON($data);
         }
         else
 		{
+			//adatok rendben vannak fel lehet vinni a db-be őket:
+			$this->TodoAppModel = new TodoAppModel();
 
-		$this->TodoAppModel = new TodoAppModel();
+			$data = array(
+				'fcim' => $this->request->getVar('txtFeladatCim'),
+				'fleiras' => $this->request->getVar('txaFeladatLeiras')
+			);
 
+			$insert = $this->TodoAppModel->add_new($data);
 
-		$data = array(
-			'fcim' => $this->request->getVar('txtFeladatCim'),
-			'fleiras' => $this->request->getVar('txaFeladatLeiras')
-		);
-
-		$insert = $this->TodoAppModel->add_new($data);
-
-		$data = [
-			'success' => true,
-			'data' => $insert,
-			'msg' => "Az új feladat felvitele sikeres volt! Hamarosan visszirányítjuk a kezdőlapra!"
-		   ];
-	 
-		   return $this->response->setJSON($data);
+			//sikeres felvitelről visszajelzés a usernek:
+			$data = [
+				'server_error' => false,
+				'msg' => "Az új feladat felvitele sikeres volt! Hamarosan visszirányítjuk a kezdőlapra!"
+			   ];
+		 
+			return $this->response->setJSON($data);
 
 		}
 		

@@ -6,8 +6,6 @@
     {block name=BodyMain}
     <h1 class="m-5">Új feladat felvitele...</h1>
 
-    <div class=""></div>
-
     <div class="col">
         <div class="row">
             <form action="javascript:void(0)" id="myform" class="col-lg-8">
