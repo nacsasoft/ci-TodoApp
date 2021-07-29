@@ -16,6 +16,30 @@ use CodeIgniter\HTTP\ResponseInterface;
 class TodoAppController extends BaseController
 {
 	private $db;
+	private $felvitel_rules;	//form adatok ellenörzése
+
+	public function __construct() {
+    	
+    	$this->felvitel_rules = array(
+			"txtFeladatCim" => [
+				"rules" => "required|min_length[5]|max_length[25]",
+				"errors" => [
+							"required" => "Feladat címe mező kitöltése kötelező!",
+							"min_length" => "Feladat címe minimum 5 karakter hosszú legyen!",
+							"max_length" => "Feladat címe maximum 25 karakter hosszú lehet!"
+						]
+				],
+			"txaFeladatLeiras" => [
+				"rules" => "required|min_length[2]",
+				"errors" => [
+							"required" => "Feladat leírása szövegmező kitöltése kötelező!",
+							"min_length" => "Feladat leírása minimum 2 karakter hosszú legyen!"
+						]
+				]
+		);
+  	}
+
+
 
 	public function index()
 	{
@@ -36,7 +60,6 @@ class TodoAppController extends BaseController
 	public function ujFeladat()
 	{
 		$smarty = Services::smarty();
-
 
 		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
 		//adom meg kiterjesztés nélkül:
@@ -62,23 +85,7 @@ class TodoAppController extends BaseController
 		$validation =  \Config\Services::validation();
 
 		//ellenörzési szabályok létrehozása a hibaüzenetekkel együtt:
-		$validation->setRules([
-			"txtFeladatCim" => [
-				"rules" => "required|min_length[5]|max_length[25]",
-				"errors" => [
-							"required" => "Feladat címe mező kitöltése kötelező!",
-							"min_length" => "Feladat címe minimum 5 karakter hosszú legyen!",
-							"max_length" => "Feladat címe maximum 25 karakter hosszú lehet!"
-						]
-				],
-			"txaFeladatLeiras" => [
-				"rules" => "required|min_length[2]",
-				"errors" => [
-							"required" => "Feladat leírása szövegmező kitöltése kötelező!",
-							"min_length" => "Feladat leírása minimum 2 karakter hosszú legyen!"
-						]
-				]
-		]);
+		$validation->setRules($this->felvitel_rules);
 
 		//a formról átvett adatok megfelelnek a szabályoknak?
 		if(! $validation->withRequest($this->request)->run())

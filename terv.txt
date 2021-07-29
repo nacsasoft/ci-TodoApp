@@ -49,8 +49,8 @@ TodoApp leírása:
                             -kicsit meg kell "stílusozni" a megjelenő üzeneteket!! -OKcss
                         -szerver oldalon CI4
                     -adatok felvitele db-be
-                    -értesítés sikeres vagy sikertelen felvitelről
-                    -vissza a főoldalra
+                    -értesítés sikeres vagy sikertelen felvitelről - OK
+                    -vissza a főoldalra  -OK
                 "Mégsem": 
                     -alert??? vissza a főoldalra...
 

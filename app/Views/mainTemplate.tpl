@@ -14,6 +14,10 @@
         <!-- sajat stiluslap -->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
+        <!-- felugró ablakokhoz stiluslap -->
+        <link rel = "stylesheet" type = "text/css" href = "css/jquery-confirm.min.css">
+
+
     <title>{block name=title}ci-TodoApp - Főoldal{/block}</title>
 
     </head>
@@ -81,7 +85,9 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
         <script src="scripts/global.js"></script>
+        <script src="scripts/jquery-confirm.min.js"></script>
 
     </body>
 </html>

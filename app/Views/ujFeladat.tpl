@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" id="btnUjFelvitel" class="btn btn-primary" onclick="ujFelvitelJS()">Új feladat rögzítése</button>
-                    <a href="index.php" class="btn btn-secondary float-right">Mégsem</a>
+                    <a id="ujFeladatMegsem" href="javascript:void(0)" class="btn btn-secondary float-right">Mégsem</a>
                 </div>
                 <div class=""></div>
             </form>
@@ -39,6 +39,6 @@
         </div>
     </div>
 
-    <script src="assets/{$jsfile}.js" type="text/javascript"></script>
+    <script src="scripts/{$jsfile}.js"></script>
 
 {/block}
