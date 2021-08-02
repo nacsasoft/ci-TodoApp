@@ -16,7 +16,13 @@ use CodeIgniter\HTTP\ResponseInterface;
 class TodoAppController extends BaseController
 {
 	private $db;
-	private $felvitel_rules;	//form adatok ellenörzése
+
+	//érvényességi szabályok a form adatok ellenörzéséhez.
+	//private tömbben lesz tárolva mert új felvitelekor és szerkesztéskor is 
+	//ugyanazokat a szabályokat kell érvényesíteni!!
+	private $felvitel_rules;	
+
+
 
 	public function __construct() {
     	
@@ -41,7 +47,7 @@ class TodoAppController extends BaseController
 
 
 
-	public function index()
+	public function TodoApp()
 	{
 		
 		$smarty = Services::smarty();
@@ -52,6 +58,7 @@ class TodoAppController extends BaseController
 		
 		//sablon feltöltése és az index oldal megjelenítése:
 		$smarty->assign("feladatlista", $feladatok);
+		$smarty->assign("feladat_id", 0);				//első feladat kiírása
 		$smarty->assign("activemenu", "index");
 		$smarty->display("mainTemplate.tpl");
 

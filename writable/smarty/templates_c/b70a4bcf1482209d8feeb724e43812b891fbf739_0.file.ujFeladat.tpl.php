@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-29 09:50:04
+/* Smarty version 3.1.39, created on 2021-08-02 13:18:20
   from '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/ujFeladat.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6102c01cf049d2_49211515',
+  'unifunc' => 'content_610836ec5eb0d3_18007512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b70a4bcf1482209d8feeb724e43812b891fbf739' => 
     array (
       0 => '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/ujFeladat.tpl',
-      1 => 1627570201,
+      1 => 1627928296,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6102c01cf049d2_49211515 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610836ec5eb0d3_18007512 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9889934736102c01cef5a76_03575801', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_868527650610836ec5db705_35406665', 'title');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14319811266102c01cef7703_57679088', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1670592035610836ec5dd318_88028520', 'BodyMain');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "mainTemplate.tpl");
 }
 /* {block 'title'} */
-class Block_9889934736102c01cef5a76_03575801 extends Smarty_Internal_Block
+class Block_868527650610836ec5db705_35406665 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_9889934736102c01cef5a76_03575801',
+    0 => 'Block_868527650610836ec5db705_35406665',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -51,12 +51,12 @@ ci-TodoApp - Új feladat<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_14319811266102c01cef7703_57679088 extends Smarty_Internal_Block
+class Block_1670592035610836ec5dd318_88028520 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_14319811266102c01cef7703_57679088',
+    0 => 'Block_1670592035610836ec5dd318_88028520',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-29 08:44:22
+/* Smarty version 3.1.39, created on 2021-08-02 14:02:31
   from '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6102b0b661ec20_60648998',
+  'unifunc' => 'content_61084147c49b53_44575113',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '244d005c70dd2cb0179cd176fa3ded0d4b26f1e5' => 
     array (
       0 => '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl',
-      1 => 1627566182,
+      1 => 1627930945,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6102b0b661ec20_60648998 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61084147c49b53_44575113 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -44,7 +44,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5248145526102b0b65fc031_87684618', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116382588161084147c29de4_50752384', 'title');
 ?>
 </title>
 
@@ -53,19 +53,19 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5248145526102b0b65
         <div class="mainContainer">
             <!-- Menü -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="Todo-FeladatLista">
                     <img src="images/logo.png" width="30" alt="Logo"> TodoApp</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'index') {?>active<?php }?>" href="index.php">Kezdőlap</a>
+                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'index') {?>active<?php }?>" href="Todo-FeladatLista">Kezdőlap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'ujFeladat') {?>active<?php }?>" href="ujFeladat">Új feladat</a>
+                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'ujFeladat') {?>active<?php }?>" href="Todo-ujFeladat">Új feladat</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -77,7 +77,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5248145526102b0b65
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10009283046102b0b6607219_90565066', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_176787856061084147c34e27_05137225', 'BodyMain');
 ?>
 
             </section>
@@ -119,12 +119,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10009283046102b0b6
     </body>
 </html><?php }
 /* {block 'title'} */
-class Block_5248145526102b0b65fc031_87684618 extends Smarty_Internal_Block
+class Block_116382588161084147c29de4_50752384 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_5248145526102b0b65fc031_87684618',
+    0 => 'Block_116382588161084147c29de4_50752384',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -134,12 +134,12 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_10009283046102b0b6607219_90565066 extends Smarty_Internal_Block
+class Block_176787856061084147c34e27_05137225 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_10009283046102b0b6607219_90565066',
+    0 => 'Block_176787856061084147c34e27_05137225',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -162,8 +162,10 @@ $_smarty_tpl->tpl_vars['value']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </div>
                         <div class="col-md-6 border border-primary">
-                                                        <?php echo (($tmp = @$_smarty_tpl->tpl_vars['kivalasztott_feladat']->value)===null||$tmp==='' ? '' : $tmp);?>
-
+                                                        <?php if ($_smarty_tpl->tpl_vars['feladatlista']->value) {?>
+                                <p class="kivalasztott_feladat"><?php echo $_smarty_tpl->tpl_vars['feladatlista']->value[$_smarty_tpl->tpl_vars['feladat_id']->value]->fleiras;?>
+</p>
+                            <?php }?>
                         </div>
                     </div>
                 <?php

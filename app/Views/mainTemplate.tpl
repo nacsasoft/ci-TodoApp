@@ -25,19 +25,19 @@
         <div class="mainContainer">
             <!-- Menü -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="Todo-FeladatLista">
                     <img src="images/logo.png" width="30" alt="Logo"> TodoApp</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link {if $activemenu == 'index'}active{/if}" href="index.php">Kezdőlap</a>
+                            <a class="nav-link {if $activemenu == 'index'}active{/if}" href="Todo-FeladatLista">Kezdőlap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {if $activemenu == 'ujFeladat'}active{/if}" href="ujFeladat">Új feladat</a>
+                            <a class="nav-link {if $activemenu == 'ujFeladat'}active{/if}" href="Todo-ujFeladat">Új feladat</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -60,7 +60,9 @@
                         </div>
                         <div class="col-md-6 border border-primary">
                             {* ide csak a kiválasztott feladat kerül *}
-                            {$kivalasztott_feladat|default:""}
+                            {if $feladatlista}
+                                <p class="kivalasztott_feladat">{$feladatlista[$feladat_id]->fleiras}</p>
+                            {/if}
                         </div>
                     </div>
                 {/block}

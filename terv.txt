@@ -38,7 +38,7 @@ TodoApp leírása:
 
 -----------------------------------------------------------------------------------------------------------------------
     
-    - Új feladat felvitele (ujFeladat.tpl):
+    - Új feladat felvitele (ujFeladat.tpl):  -OK
         -BodyMain szekció:
             -Cím
             -feladat leírása
@@ -46,13 +46,13 @@ TodoApp leírása:
                 -"Hozzáadás":
                     -adatok ellenörzése (cím: max 50 karakter; mindegyik kitöltése kötelező; escape)
                         -kliens oldalon: jQuery Validate pluginnal
-                            -kicsit meg kell "stílusozni" a megjelenő üzeneteket!! -OKcss
-                        -szerver oldalon CI4
-                    -adatok felvitele db-be
+                            -kicsit meg kell "stílusozni" a megjelenő üzeneteket!! -OK
+                        -szerver oldalon CI4 -OK
+                    -adatok felvitele db-be -OK
                     -értesítés sikeres vagy sikertelen felvitelről - OK
                     -vissza a főoldalra  -OK
                 "Mégsem": 
-                    -alert??? vissza a főoldalra...
+                    -alert??? vissza a főoldalra... -OK
 
 -----------------------------------------------------------------------------------------------------------------------
 

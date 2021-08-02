@@ -23,6 +23,13 @@
     padding: 0px 5px;
     margin: 15px 0;
 }
+.feladatlista:hover {
+    background-color: rgba(250, 0, 0, 0.3);
+}
+
+.kivalasztott_feladat {
+    padding: 15px;
+}
 
 /* űrlapoknál ha hiba van a mezőnél */
 label.error {

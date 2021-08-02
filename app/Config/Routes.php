@@ -32,14 +32,10 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'TodoAppController::index');
-$routes->match(['post'], 'ujFeladat', 'TodoAppController::ujFelvitel');
-$routes->get('(:any)', 'TodoAppController::ujFeladat');
-//$routes->get('(:any)', 'TodoAppController::feladatSzerkesztese');
+$routes->get('Todo-FeladatLista', 'TodoAppController::TodoApp');
+$routes->get('Todo-ujFeladat', 'TodoAppController::ujFeladat');
+$routes->post('ujFeladat', 'TodoAppController::ujFelvitel');
 
-//$routes->get('ujFelvitel', 'TodoAppController::ujFelvitel');
-
-//$routes->get('(:any)', 'Home::view/$1');
 
 /*
  * --------------------------------------------------------------------

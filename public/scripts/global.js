@@ -43,7 +43,7 @@ $(function() {
                                 $('#res_message').hide();
                                 $('#res_message').html('');
                                 $('#btnUjFelvitel').prop('disabled', false);
-                                location.replace("index.php");
+                                location.replace("Todo-FeladatLista");
                             }
                         },
                         megsem: {
