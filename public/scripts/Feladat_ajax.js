@@ -56,7 +56,7 @@ function adatokMentese() {
 
     if (uj_szerkeszt == 'ujfelvitel') {
         //új feladatot kell felvenni:
-        url = 'TodoAppController/ujFelvitel';                
+        url = 'TodoAppController/ujFelvitel/ujfeladat';                
     }
 
     // feladat hozzáadása AJAX-al:

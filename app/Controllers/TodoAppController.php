@@ -46,10 +46,14 @@ class TodoAppController extends BaseController
   	}
 
 
-
+  	/**
+  	 * [TodoApp description]
+  	 *
+  	 * Főoldal - feladatok listázása
+  	 * 
+  	 */
 	public function TodoApp()
-	{
-		
+	{		
 		$smarty = Services::smarty();
 		
 		//lekérjük a modeltől az összes feladatot:
@@ -64,6 +68,12 @@ class TodoAppController extends BaseController
 
 	}
 	
+	/**
+	 * [ujFeladat description]
+	 *
+	 * Új feladat felvitel oldal megjelenítése
+	 * 
+	 */
 	public function ujFeladat()
 	{
 		$smarty = Services::smarty();
@@ -76,10 +86,22 @@ class TodoAppController extends BaseController
 		
 	}
 
-	public function ujFelvitel()
+	/**
+	 * [ujFelvitel description]
+	 *
+	 * Új feladat felvitele az adatbázisba.
+	 * Form-ról átvett adatok szerver oldali ellenörzése. A szabályokat private tömbben
+	 * tárolom ($this->felvitel_rules)!
+	 *
+	 * @param $data :
+	 *        = "ujfeladat" akkor új felvitel lesz (INSERT)
+	 *        = "szerkeszt" akkor már meglévő feladat adatait kell frissíteni (UPDATE)
+	 * 
+	 */
+	public function ujFelvitel($data)
 	{
 		
-		//uj feladat felvitel
+		if ($data == "ujfeladat") { die("BUMM"); }
 	
 		//form adatok begyüjtése és az url biztonságos betöltése:
 		helper(['form', 'url']);

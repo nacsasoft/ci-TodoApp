@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('Todo-FeladatLista', 'TodoAppController::TodoApp');
 $routes->get('Todo-ujFeladat', 'TodoAppController::ujFeladat');
-$routes->post('ujFeladat', 'TodoAppController::ujFelvitel');
+$routes->post('ujFeladat/(:alpha)', 'TodoAppController::ujFelvitel/$1');
 
 
 /*
