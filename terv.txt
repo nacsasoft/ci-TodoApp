@@ -30,8 +30,8 @@ TodoApp leírása:
     - Feladatok listázása, alapnézet (mainTemplate.tpl) + A KERESÉS EREMÉNYE IS IDE KERÜL!!!!
         - nav bővítése : "Új feladat" -al (menüből is elérhető legyen)  -OK
         -BodyMain szekció:
-            -bal oldali listában a feladatok
-            -jobb oldali szövegmezőben a feladat részletei
+            -bal oldali listában a feladatok -OK
+            -jobb oldali szövegmezőben a feladat részletei  -OK
             -gombok: "Törlés" + "Szerkesztés" + "Küldés..." + "Új feladat"
                 -Küldés:
                     -email cím bekérése, ell. és küldés....

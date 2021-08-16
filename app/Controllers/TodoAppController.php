@@ -18,14 +18,14 @@ class TodoAppController extends BaseController
 	private $db;
 
 	//érvényességi szabályok a form adatok ellenörzéséhez.
-	//private tömbben lesz tárolva mert új felvitelekor és szerkesztéskor is 
+	//private tömbben lesz tárolva mert új felvitelekor és szerkesztéskor is
 	//ugyanazokat a szabályokat kell érvényesíteni!!
-	private $felvitel_rules;	
+	private $felvitel_rules;
 
 
 
 	public function __construct() {
-    	
+
     	$this->felvitel_rules = array(
 			"txtFeladatCim" => [
 				"rules" => "required|min_length[5]|max_length[25]",
@@ -50,29 +50,29 @@ class TodoAppController extends BaseController
   	 * [TodoApp description]
   	 *
   	 * Főoldal - feladatok listázása
-  	 * 
+  	 *
   	 */
 	public function TodoApp()
-	{		
+	{
 		$smarty = Services::smarty();
-		
+
 		//lekérjük a modeltől az összes feladatot:
 		$this->TodoAppModel = new TodoAppModel();
 		$feladatok = $this->TodoAppModel->get_all_todo();
-		
+
 		//sablon feltöltése és az index oldal megjelenítése:
 		$smarty->assign("feladatlista", $feladatok);
-		$smarty->assign("feladat_id", 0);				//első feladat kiírása
+		$smarty->assign("feladat_id", 0);	//első feladat kiírása
 		$smarty->assign("activemenu", "index");
 		$smarty->display("mainTemplate.tpl");
 
 	}
-	
+
 	/**
 	 * [ujFeladat description]
 	 *
 	 * Új feladat felvitel oldal megjelenítése
-	 * 
+	 *
 	 */
 	public function ujFeladat()
 	{
@@ -80,10 +80,10 @@ class TodoAppController extends BaseController
 
 		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
 		//adom meg kiterjesztés nélkül:
-		$smarty->assign('jsfile', "Feladat_ajax"); 
+		$smarty->assign('jsfile', "Feladat_ajax");
 		$smarty->assign('activemenu', "ujFeladat");
 		$smarty->display("ujFeladat.tpl");
-		
+
 	}
 
 	/**
@@ -96,13 +96,13 @@ class TodoAppController extends BaseController
 	 * @param $data :
 	 *        = "ujfeladat" akkor új felvitel lesz (INSERT)
 	 *        = "szerkeszt" akkor már meglévő feladat adatait kell frissíteni (UPDATE)
-	 * 
+	 *
 	 */
 	public function ujFelvitel($data)
 	{
-		
-		if ($data == "ujfeladat") { die("BUMM"); }
-	
+
+		//if ($data == "ujfeladat") { die("BUMM"); }
+
 		//form adatok begyüjtése és az url biztonságos betöltése:
 		helper(['form', 'url']);
 
@@ -122,13 +122,13 @@ class TodoAppController extends BaseController
         	//hiba va az átvett adatokkal, lekérjük a konkrét hibát a fentebb megadott szabályból:
 			$cimError = $validation->getError("txtFeladatCim");
 			$leirasError = $validation->getError("txaFeladatLeiras");
-							
-			//user tájékoztatása a szerveroldali hibáról:	
+
+			//user tájékoztatása a szerveroldali hibáról:
 			$data = [
 				'server_error' => true,
 				'msg' => "Az új feladat felvitele sikertelen volt!\n" . $cimError . "\n" . $leirasError
 			   ];
-		 
+
 			return $this->response->setJSON($data);
         }
         else
@@ -141,6 +141,7 @@ class TodoAppController extends BaseController
 				'fleiras' => $this->request->getVar('txaFeladatLeiras')
 			);
 
+			//$insert = $this->TodoAppModel->save($data);  -is jó lehet de akkor a model osztályt kell kibővíteni az engedélyezett mezőnevekkel.....
 			$insert = $this->TodoAppModel->add_new($data);
 
 			//sikeres felvitelről visszajelzés a usernek:
@@ -148,10 +149,25 @@ class TodoAppController extends BaseController
 				'server_error' => false,
 				'msg' => "Az új feladat felvitele sikeres volt! Hamarosan visszirányítjuk a kezdőlapra!"
 			   ];
-		 
+
 			return $this->response->setJSON($data);
 
 		}
-		
+
+	}
+
+	/**
+	 * Főoldalon a listából kiválasztott feladat lekérdezése a db-ből
+	 *
+	 * @param 		$fid 		-feladat azonosítója
+	 *
+	 * @return 		$fleiras 	-feladat leírása
+	 */
+	public function kivalasztottFeladat($fid)
+	{
+		$this->TodoAppModel = new TodoAppModel();
+		$fleiras = $this->TodoAppModel->get_todo_by_id($fid);
+
+		echo $fleiras->fleiras;
 	}
 }

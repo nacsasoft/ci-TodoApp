@@ -11,11 +11,32 @@ $(function() {
     })
 })
 
-$(function() {
-    $('.feladatlista').click(function(){
-        alert($(this).attr('id'));
-    })
-})
+
+/**
+ * A feladatlostában kiválasztott feladat részleteit kell lekérni
+ * AJAX-on keresztül és megjeleníteni a "kivalasztott_feladat" paragrafusban!
+ * 
+ * @param   id      int     feladat azonosító (fid)
+ * @return void;
+ */
+function feladatLista(fid) {
+        $.ajax({
+            url: 'TodoAppController/kivalasztottFeladat/' + fid,
+            type: 'POST',
+            //data: {fid: 'fid'}, -NOK!!!
+            success: function( response )
+                {
+                    $(".kivalasztott_feladat").text(response);
+                    //console.log("response: " + );
+            }
+        })
+        .fail(function() {
+            console.log("error");
+        });
+        
+    }
+//})
+
 
 //----------------------------------------------------------------------------------------------------
 

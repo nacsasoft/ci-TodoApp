@@ -35,6 +35,7 @@ $routes->setAutoRoute(true);
 $routes->get('Todo-FeladatLista', 'TodoAppController::TodoApp');
 $routes->get('Todo-ujFeladat', 'TodoAppController::ujFeladat');
 $routes->post('ujFeladat/(:alpha)', 'TodoAppController::ujFelvitel/$1');
+$routes->post('Todo-FeladatLista/(:alpha)', 'TodoAppController::kivalasztottFeladat/$1');
 
 
 /*

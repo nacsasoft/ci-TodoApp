@@ -30,7 +30,6 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -46,16 +45,21 @@
                     </form>
                 </div>
             </nav>
+            
+            
 
             {* Tartalom : *}
-            <section class="BodyMain">
+            <section class="BodyMain">                    
                 {block name=BodyMain}
                     <h1 class="m-5">Feladatlista...</h1>
                     <div class="row ml-2 mr-2 justify-content-center" style="min-height: 65vh;">
                         <div class="col-md-3  border border-primary">
                             {* itt lesznek a feladatok *}
                             {foreach $feladatlista as $value}
-                                <p class="feladatlista" id="{$value->fid}">{$value->fcim}</p>
+                                {* <p class="feladatlista" id="{$value->fid}">{$value->fcim}</p> *}
+                                <p>
+                                    <a class="feladatlista" onclick="feladatLista({$value->fid})" href="#">{$value->fcim}</a>
+                                </p>
                             {/foreach}
                         </div>
                         <div class="col-md-6 border border-primary">
@@ -63,6 +67,8 @@
                             {if $feladatlista}
                                 <p class="kivalasztott_feladat">{$feladatlista[$feladat_id]->fleiras}</p>
                             {/if}
+                                  
+                            </div>
                         </div>
                     </div>
                 {/block}
@@ -87,7 +93,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        
+
         <script src="scripts/global.js"></script>
         <script src="scripts/jquery-confirm.min.js"></script>
 

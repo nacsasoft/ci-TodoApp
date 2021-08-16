@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-02 14:02:31
+/* Smarty version 3.1.39, created on 2021-08-04 12:41:00
   from '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61084147c49b53_44575113',
+  'unifunc' => 'content_610ad12c43ec13_18505066',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '244d005c70dd2cb0179cd176fa3ded0d4b26f1e5' => 
     array (
       0 => '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl',
-      1 => 1627930945,
+      1 => 1628098830,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61084147c49b53_44575113 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610ad12c43ec13_18505066 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -44,7 +44,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116382588161084147c29de4_50752384', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1433278487610ad12c41fbd6_09641694', 'title');
 ?>
 </title>
 
@@ -77,7 +77,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116382588161084147
 
                         <section class="BodyMain">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_176787856061084147c34e27_05137225', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1239583010610ad12c429d91_34647934', 'BodyMain');
 ?>
 
             </section>
@@ -119,12 +119,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_176787856061084147
     </body>
 </html><?php }
 /* {block 'title'} */
-class Block_116382588161084147c29de4_50752384 extends Smarty_Internal_Block
+class Block_1433278487610ad12c41fbd6_09641694 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_116382588161084147c29de4_50752384',
+    0 => 'Block_1433278487610ad12c41fbd6_09641694',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -134,12 +134,12 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_176787856061084147c34e27_05137225 extends Smarty_Internal_Block
+class Block_1239583010610ad12c429d91_34647934 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_176787856061084147c34e27_05137225',
+    0 => 'Block_1239583010610ad12c429d91_34647934',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -154,9 +154,11 @@ $_smarty_tpl->tpl_vars['value']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['value']->value) {
 $_smarty_tpl->tpl_vars['value']->do_else = false;
 ?>
-                                <p class="feladatlista" id="<?php echo $_smarty_tpl->tpl_vars['value']->value->fid;?>
-"><?php echo $_smarty_tpl->tpl_vars['value']->value->fcim;?>
-</p>
+                                                                <p>
+                                    <a class="feladatlista" onclick="feladatLista(<?php echo $_smarty_tpl->tpl_vars['value']->value->fid;?>
+)" href="#"><?php echo $_smarty_tpl->tpl_vars['value']->value->fcim;?>
+</a>
+                                </p>
                             <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
