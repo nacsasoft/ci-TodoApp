@@ -1,0 +1,212 @@
+CRITICAL - 2021-08-17 12:26:05 --> Undefined index: txtFeladatCim
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/writable/smarty/templates_c/a43cec4f582652c6bbcd05a0d3ed40c5d7af9f3c_0.file.feladatSzerkesztese.tpl.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 81, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_920806675611bf12d7e5518_95667107->callBlock(Object(Smarty_Internal_Template))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock(Object(Block_920806675611bf12d7e5518_95667107), Object(Smarty_Internal_Template))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process(Object(Smarty_Internal_Template), Object(Block_920806675611bf12d7e5518_95667107), Object(Block_1956103538611bf12c58d8c4_53397730))
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process(Object(Smarty_Internal_Template), Object(Block_1956103538611bf12c58d8c4_53397730))
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/writable/smarty/templates_c/244d005c70dd2cb0179cd176fa3ded0d4b26f1e5_0.file.mainTemplate.tpl.php(84): Smarty_Internal_Runtime_Inheritance->instanceBlock(Object(Smarty_Internal_Template), 'Block_195610353...', 'BodyMain')
+#6 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_611bf12c595cd4_67403666(Object(Smarty_Internal_Template))
+#7 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#8 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender('mainTemplate.tp...', NULL, NULL, 0, 3600, Array, 2, false, NULL, NULL)
+#11 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/writable/smarty/templates_c/a43cec4f582652c6bbcd05a0d3ed40c5d7af9f3c_0.file.feladatSzerkesztese.tpl.php(36): Smarty_Internal_Runtime_Inheritance->endChild(Object(Smarty_Internal_Template), 'mainTemplate.tp...')
+#12 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_611bf12d7eaa13_62196711(Object(Smarty_Internal_Template))
+#13 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#14 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#15 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(232): Smarty_Internal_Template->render(false, 1)
+#16 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#17 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(182): Smarty_Internal_TemplateBase->display('feladatSzerkesz...')
+#18 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#19 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#20 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#22 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#23 {main}
+CRITICAL - 2021-08-17 12:55:13 --> Too few arguments to function App\Controllers\TodoAppController::Szerkesztes(), 0 passed in /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-17 12:55:16 --> Too few arguments to function App\Controllers\TodoAppController::Szerkesztes(), 0 passed in /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-17 12:55:19 --> Too few arguments to function App\Controllers\TodoAppController::Szerkesztes(), 0 passed in /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-17 13:16:44 --> Too few arguments to function App\Controllers\TodoAppController::Szerkesztes(), 0 passed in /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'style.css')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'Feladat_ajax.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'global.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:38 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('images', 'logo.png')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:43 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'style.css')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'Feladat_ajax.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'style.css')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'global.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:44 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('images', 'logo.png')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:49 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'style.css')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:50 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('css', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:50 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'Feladat_ajax.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:50 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'global.js')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:50 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('scripts', 'jquery-confirm....')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:49:50 --> Trying to get property 'fcim' of non-object
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Controllers/TodoAppController.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/opt/lampp/htdo...', 185, Array)
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes('images', 'logo.png')
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2021-08-17 13:53:10 --> Too few arguments to function App\Controllers\TodoAppController::Szerkesztes(), 0 passed in /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\TodoAppController->Szerkesztes()
+#1 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoAppController))
+#2 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/opt/lampp/htdo...')
+#5 {main}

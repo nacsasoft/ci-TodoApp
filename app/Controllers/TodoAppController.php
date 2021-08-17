@@ -47,8 +47,7 @@ class TodoAppController extends BaseController
 
 
   	/**
-  	 * [TodoApp description]
-  	 *
+	 * 
   	 * Főoldal - feladatok listázása
   	 *
   	 */
@@ -62,15 +61,13 @@ class TodoAppController extends BaseController
 
 		//sablon feltöltése és az index oldal megjelenítése:
 		$smarty->assign("feladatlista", $feladatok);
-		$smarty->assign("feladat_id", 0);	//első feladat kiírása
 		$smarty->assign("activemenu", "index");
 		$smarty->display("mainTemplate.tpl");
 
 	}
 
 	/**
-	 * [ujFeladat description]
-	 *
+	 * 
 	 * Új feladat felvitel oldal megjelenítése
 	 *
 	 */
@@ -87,8 +84,6 @@ class TodoAppController extends BaseController
 	}
 
 	/**
-	 * [ujFelvitel description]
-	 *
 	 * Új feladat felvitele az adatbázisba.
 	 * Form-ról átvett adatok szerver oldali ellenörzése. A szabályokat private tömbben
 	 * tárolom ($this->felvitel_rules)!
@@ -142,7 +137,7 @@ class TodoAppController extends BaseController
 			);
 
 			//$insert = $this->TodoAppModel->save($data);  -is jó lehet de akkor a model osztályt kell kibővíteni az engedélyezett mezőnevekkel.....
-			$insert = $this->TodoAppModel->add_new($data);
+			$insert = $this->TodoAppModel->add_new_todo($data);
 
 			//sikeres felvitelről visszajelzés a usernek:
 			$data = [
@@ -169,5 +164,32 @@ class TodoAppController extends BaseController
 		$fleiras = $this->TodoAppModel->get_todo_by_id($fid);
 
 		echo $fleiras->fleiras;
+	}
+
+	/**
+	 * 
+	 * Feladat szerkesztése oldal megjelenítése a kiválasztott feladattal
+	 * 
+	 * @param		$fid	Feladat azonosító
+	 *
+	 */
+	public function Szerkesztes($fid)
+	{
+		$smarty = Services::smarty();
+
+		$this->TodoAppModel = new TodoAppModel();
+		$feladat = $this->TodoAppModel->get_todo_by_id($fid);
+
+		//dinamikusan állítom be az ajax scriptet, itt csak a script fájl nevét
+		//adom meg kiterjesztés nélkül:
+		$smarty->assign("txtFeladatCim", $feladat->fcim);
+		$smarty->assign("txaFeladatLeiras", $feladat->fleiras);
+		$smarty->assign("jsfile", "Feladat_ajax");
+		$smarty->assign("activemenu", "Szerkeszt");
+		$smarty->display("feladatSzerkesztese.tpl");
+
+		//return redirect()->to(base_url("Todo-Szerkesztes/$fid"));
+
+
 	}
 }

@@ -53,10 +53,23 @@
          * 
          * @param      array $data { feladat címe és leírása (JSON) }
          */
-        public function add_new($data)
+        public function add_new_todo($data)
         {
             $query = $this->db->table("feladatok")->insert($data);
 
             return $this->db->insertID();
+        }
+
+        /**
+         * Meglévő feladat adatainak frissítése az adatbázisban
+         * 
+         * @param       $fid        { feladat adatbázis azonosító }
+         * @param       array $data { feladat címe és leírása (JSON) }
+         */
+        public function update_todo($fid, $data)
+        {
+            $query = $this->db->table("feladatok")->update($data, "fid = $fid");
+
+            return true;    // $this->db->insertID();
         }
     }

@@ -26,6 +26,9 @@
 .feladatlista:hover {
     background-color: rgba(250, 0, 0, 0.3);
 }
+.feladatlista a:active {
+    background-color: aqua;
+}
 
 .kivalasztott_feladat {
     padding: 15px;

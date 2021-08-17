@@ -34,7 +34,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('Todo-FeladatLista', 'TodoAppController::TodoApp');
 $routes->get('Todo-ujFeladat', 'TodoAppController::ujFeladat');
+$routes->get('Todo-Szerkesztes/(:num)', 'TodoAppController::Szerkesztes/$1');
+
 $routes->post('ujFeladat/(:alpha)', 'TodoAppController::ujFelvitel/$1');
+//$routes->post('Szerkeszt/(:num)', 'TodoAppController::Szerkeszt/$1');
 $routes->post('Todo-FeladatLista/(:alpha)', 'TodoAppController::kivalasztottFeladat/$1');
 
 

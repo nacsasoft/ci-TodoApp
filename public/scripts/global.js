@@ -13,21 +13,28 @@ $(function() {
 
 
 /**
- * A feladatlostában kiválasztott feladat részleteit kell lekérni
- * AJAX-on keresztül és megjeleníteni a "kivalasztott_feladat" paragrafusban!
+ * A feladatlistában kiválasztott feladat részleteit kell lekérni
+ * AJAX-on keresztül és megjeleníteni a "kivalasztott_feladat" textarea-ban!
  * 
- * @param   id      int     feladat azonosító (fid)
+ * @param   fid      int     feladat azonosító (fid)
  * @return void;
  */
 function feladatLista(fid) {
+        //feladat azonosító eltárolása egy rejtett inputba:
+        $("#feladat_id").val(fid);
+        //részletek lekérése a szerverről és megjelenítés:
         $.ajax({
             url: 'TodoAppController/kivalasztottFeladat/' + fid,
             type: 'POST',
             //data: {fid: 'fid'}, -NOK!!!
             success: function( response )
                 {
+                    //listázott feladatcímek hátterének "törlése":
+                    $("a[id^='feladatID']").attr("style", "background-color: rgba(0,0,0,0)");
+                    //kiválasztott feladatcím kiemelése:
+                    $("#feladatID" + fid).attr("style", "background-color: yellow");
+                    //kiválasztott feladat részleteinek kiírása:
                     $(".kivalasztott_feladat").text(response);
-                    //console.log("response: " + );
             }
         })
         .fail(function() {
@@ -35,8 +42,40 @@ function feladatLista(fid) {
         });
         
     }
-//})
 
+//----------------------------------------------------------------------------------------------------
+
+
+/**
+ * A feladatlistában kiválasztott feladat id-ját át kell adni a php-nak majd
+ * a CI Smarty-n kersztül megjeleníti a feladatszerkesztés oldalt.
+ * 
+ * @param
+ * @return void;
+ */
+ function feladatSzerkesztesAJAX() {
+    //feladat azonosító beolvasása a rejtett inputból:
+    fid = $("#feladat_id").val();
+    //var url = "Todo-Szerkesztes/" + fid;
+    //$(location).attr("href", url);
+    
+    //id elküldése a szervernek és a szerkesztés oldal megjelenítése:
+    $.ajax({
+        url: 'TodoAppController/Szerkesztes/' + fid,
+        type: 'POST',
+        //data: {fid: 'fid'}, -NOK!!!
+        success: function( response ) {
+            var url = "Todo-Szerkesztes/" + fid;
+            $(location).attr("href", url);
+            return true;
+        }
+    })
+    .fail(function() {
+        console.log("error");
+    });
+    
+    
+}
 
 //----------------------------------------------------------------------------------------------------
 

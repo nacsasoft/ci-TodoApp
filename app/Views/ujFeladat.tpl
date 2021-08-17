@@ -1,4 +1,4 @@
-{* Fősablon kell nekünk *}
+{* Fősablon behúzása *}
 {extends file="mainTemplate.tpl"}
 
 {block name=title}ci-TodoApp - Új feladat{/block}

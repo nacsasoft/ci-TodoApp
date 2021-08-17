@@ -44,22 +44,18 @@ function ujFelvitelJS() {
             }, 
             submitHandler: function(form) {
                 //adatok rendben, mehet a küldés-mentés:
-                adatokMentese();
+                ujFeladatAJAX();
             }
         }
     );
     
 }
 
-function adatokMentese() {
+function ujFeladatAJAX() {
     var url;
+    url = 'TodoAppController/ujFelvitel/ujfeladat';                
 
-    if (uj_szerkeszt == 'ujfelvitel') {
-        //új feladatot kell felvenni:
-        url = 'TodoAppController/ujFelvitel/ujfeladat';                
-    }
-
-    // feladat hozzáadása AJAX-al:
+    //Új feladat hozzáadása AJAX-al:
     $('#btnUjFelvitel').html('Küldés...');
     $.ajax({
         url : url,

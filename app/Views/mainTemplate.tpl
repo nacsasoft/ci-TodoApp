@@ -38,6 +38,9 @@
                         <li class="nav-item">
                             <a class="nav-link {if $activemenu == 'ujFeladat'}active{/if}" href="Todo-ujFeladat">Új feladat</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link {if $activemenu == 'Szerkeszt'}active{/if}" href="#" onclick="feladatSzerkesztesAJAX()">Szerkesztés</a>
+                        </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Feladat keresése" aria-label="Search">
@@ -52,23 +55,29 @@
             <section class="BodyMain">                    
                 {block name=BodyMain}
                     <h1 class="m-5">Feladatlista...</h1>
-                    <div class="row ml-2 mr-2 justify-content-center" style="min-height: 65vh;">
-                        <div class="col-md-3  border border-primary">
+                    
+                    <div class="row ml-2 mr-2 justify-content-center">
+                        <div class="col-md-3 border border-primary">
                             {* itt lesznek a feladatok *}
                             {foreach $feladatlista as $value}
                                 {* <p class="feladatlista" id="{$value->fid}">{$value->fcim}</p> *}
                                 <p>
-                                    <a class="feladatlista" onclick="feladatLista({$value->fid})" href="#">{$value->fcim}</a>
+                                    <a id="feladatID{$value->fid}" class="feladatlista" onclick="feladatLista({$value->fid})" href="#">{$value->fcim}</a>
                                 </p>
                             {/foreach}
                         </div>
                         <div class="col-md-6 border border-primary">
                             {* ide csak a kiválasztott feladat kerül *}
                             {if $feladatlista}
-                                <p class="kivalasztott_feladat">{$feladatlista[$feladat_id]->fleiras}</p>
-                            {/if}
-                                  
-                            </div>
+                                <p class="kivalasztott_feladat">Válassz ki egy feladatot a bal oldali listából!!</p>
+                            {/if}                                  
+                        </div>
+                        <input type="hidden" name="feladat_id" id="feladat_id" value="">
+                        <div class="btn-group m-2 h-25" role="group" aria-label="Feladat műveletek">
+                            <a href="" class="btn btn-secondary">Törlés</a>
+                            <a href="#" onclick="feladatSzerkesztesAJAX()" class="btn btn-secondary">Szerkesztés</a>
+                            <a href="" class="btn btn-secondary">Küldés...</a>
+                            <a href="Todo-ujFeladat" class="btn btn-secondary">Új feladat</a>
                         </div>
                     </div>
                 {/block}
