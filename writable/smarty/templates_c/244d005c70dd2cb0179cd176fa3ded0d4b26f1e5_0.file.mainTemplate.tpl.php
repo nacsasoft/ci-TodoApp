@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-17 13:34:13
+/* Smarty version 3.1.39, created on 2021-09-01 10:44:56
   from '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611c0125e12bd4_95307915',
+  'unifunc' => 'content_612f9ff832aa40_02974501',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '244d005c70dd2cb0179cd176fa3ded0d4b26f1e5' => 
     array (
       0 => '/opt/lampp/htdocs/CodeIgniter/ci-TodoApp2/app/Views/mainTemplate.tpl',
-      1 => 1629225251,
+      1 => 1630511092,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611c0125e12bd4_95307915 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612f9ff832aa40_02974501 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -44,7 +44,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
 
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_948008140611c0125e06534_96631300', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1921383576612f9ff831bd21_52861868', 'title');
 ?>
 </title>
 
@@ -67,7 +67,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_948008140611c0125e
                             <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'ujFeladat') {?>active<?php }?>" href="Todo-ujFeladat">Új feladat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'Szerkeszt') {?>active<?php }?>" href="#" onclick="feladatSzerkesztesAJAX()">Szerkesztés</a>
+                            <a class="nav-link <?php if ($_smarty_tpl->tpl_vars['activemenu']->value == 'Szerkeszt') {?>active<?php }?>" href="Todo-Szerkesztes" onclick="feladatSzerkesztesAJAX()">Szerkesztés</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -81,7 +81,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_948008140611c0125e
 
                         <section class="BodyMain">                    
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2070109253611c0125e0b1e1_23248770', 'BodyMain');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_583673085612f9ff8321dd4_90828645', 'BodyMain');
 ?>
 
             </section>
@@ -124,12 +124,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2070109253611c0125
 </html>
 <?php }
 /* {block 'title'} */
-class Block_948008140611c0125e06534_96631300 extends Smarty_Internal_Block
+class Block_1921383576612f9ff831bd21_52861868 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_948008140611c0125e06534_96631300',
+    0 => 'Block_1921383576612f9ff831bd21_52861868',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -139,12 +139,12 @@ ci-TodoApp - Főoldal<?php
 }
 /* {/block 'title'} */
 /* {block 'BodyMain'} */
-class Block_2070109253611c0125e0b1e1_23248770 extends Smarty_Internal_Block
+class Block_583673085612f9ff8321dd4_90828645 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'BodyMain' => 
   array (
-    0 => 'Block_2070109253611c0125e0b1e1_23248770',
+    0 => 'Block_583673085612f9ff8321dd4_90828645',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -163,7 +163,7 @@ $_smarty_tpl->tpl_vars['value']->do_else = false;
                                                                 <p>
                                     <a id="feladatID<?php echo $_smarty_tpl->tpl_vars['value']->value->fid;?>
 " class="feladatlista" onclick="feladatLista(<?php echo $_smarty_tpl->tpl_vars['value']->value->fid;?>
-)" href="#"><?php echo $_smarty_tpl->tpl_vars['value']->value->fcim;?>
+)"><?php echo $_smarty_tpl->tpl_vars['value']->value->fcim;?>
 </a>
                                 </p>
                             <?php
@@ -178,7 +178,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <input type="hidden" name="feladat_id" id="feladat_id" value="">
                         <div class="btn-group m-2 h-25" role="group" aria-label="Feladat műveletek">
                             <a href="" class="btn btn-secondary">Törlés</a>
-                            <a href="#" onclick="feladatSzerkesztesAJAX()" class="btn btn-secondary">Szerkesztés</a>
+                            <a href="" onclick="feladatSzerkesztesAJAX()" class="btn btn-secondary">Szerkesztés</a>
                             <a href="" class="btn btn-secondary">Küldés...</a>
                             <a href="Todo-ujFeladat" class="btn btn-secondary">Új feladat</a>
                         </div>

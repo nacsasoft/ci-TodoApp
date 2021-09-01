@@ -66,7 +66,7 @@ function feladatLista(fid) {
         //data: {fid: 'fid'}, -NOK!!!
         success: function( response ) {
             var url = "Todo-Szerkesztes/" + fid;
-            $(location).attr("href", url);
+            //$(location).attr("href", url);
             return true;
         }
     })
